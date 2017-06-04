@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="59px" viewBox="0 0 72 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>other-projects-text</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="80" height="80"></rect>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hollo" transform="translate(-145.000000, -5324.000000)">
+            <g id="other-projects-text" transform="translate(140.000000, 5319.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <circle id="Oval-2" mask="url(#mask-2)" transform="translate(40.000000, 40.000000) scale(-1, 1) translate(-40.000000, -40.000000) " cx="40" cy="40" r="28"></circle>
+                <text id="z" mask="url(#mask-2)" font-family="FantasqueSansMono-Regular, Fantasque Sans Mono" font-size="14" font-weight="normal" fill="#000000">
+                    <tspan x="33.9082031" y="16">my other projects</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-gfycat" src="https://cdn.ampproject.org/v0/amp-gfycat-0.1.js"></script>
+    <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+    <title>Hollo project</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+
+    <style amp-custom>
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
+      }
+      @font-face {
+        font-family: 'Another Font That Does Not exist';
+        font-style: normal;
+        font-weight: 400;
+        src: url(fonts/FontDoesNotExist.ttf) format('truetype');
+      }
+      @font-face {
+        font-family: 'Comic AMP';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Comic AMP'), url(/fonts/ComicAMP.ttf) format('truetype');
+      }
+      @font-face {
+        font-family: 'fantasque_sans_monobold';
+        src: url('assets/fonts/fantasquesansmono-bold-webfont.woff2') format('woff2'),
+            url('assets/fonts/fantasquesansmono-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'fantasque_sans_monoregular';
+        src: url('assets/fonts/fantasquesansmono-regular-webfont.woff2') format('woff2'),
+            url('assets/fonts/fantasquesansmono-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: rgba(0,0,0,0.87);
+      }
+      
+      h1, h2, h3, amp-fit-text {
+        font-family: 'fantasque_sans_monobold';
+      }
+      
+      h2 {
+        font-family: 'fantasque_sans_monoregular';
+        font-size: 1.8rem;
+      }
+       
+      p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+      }
+      
+      .meta-data {
+        display: inline-block;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 400;
+        font-size: 1.15rem;
+        margin: 16px 0;
+      }
+      
+      .text-box {
+        padding: 0 40px;
+        margin-bottom: 40px;
+        max-width: 416px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      amp-img {
+        background-color: #f4f4f4;
+        margin-bottom: 40px;
+      }
+      amp-image-lightbox {
+        background-color: #f4f4f4;
+      }
+      @media screen and (min-width: 640px) {
+        amp-img {
+          max-height: 80vh;
+          max-width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      @media screen and (min-width: 1442px) {
+        amp-img {
+          max-height: 40vh;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 60%;
+        }
+      }
+    </style>  
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  </head>
+  
+  <body>
+    <section class="text-box">
+      <span class="meta-data">2016 / Product Lead</span>
+      <amp-fit-text width="300" height="200" layout="responsive" min-font-size="20">
+        Felix Lange Portfolio
+      </amp-fit-text>
+      <h2>Projects</h2>
+      <a href="hollo-email-messenger/index.html">Hollo - Email messenger</a>
+    </section>
+  </body>
+</html>
