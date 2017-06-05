@@ -7,30 +7,20 @@
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <script async custom-element="amp-gfycat" src="https://cdn.ampproject.org/v0/amp-gfycat-0.1.js"></script>
     <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
-    <title>Hollo project</title>
+    <title>Felix Lange Portfolio</title>
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
 
     <style amp-custom>
+      /* Setting up fonts */
       @font-face {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         src: url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
       }
-      @font-face {
-        font-family: 'Another Font That Does Not exist';
-        font-style: normal;
-        font-weight: 400;
-        src: url(fonts/FontDoesNotExist.ttf) format('truetype');
-      }
-      @font-face {
-        font-family: 'Comic AMP';
-        font-style: normal;
-        font-weight: 400;
-        src: local('Comic AMP'), url(/fonts/ComicAMP.ttf) format('truetype');
-      }
+
       @font-face {
         font-family: 'fantasque_sans_monobold';
         src: url('assets/fonts/fantasquesansmono-bold-webfont.woff2') format('woff2'),
@@ -47,6 +37,10 @@
         font-style: normal;
       }
       
+      /* General rules */
+      * {
+        box-sizing: border-box;
+      }
       body {
         font-family: 'Roboto', sans-serif;
         font-size: 14px;
@@ -90,6 +84,73 @@
       amp-image-lightbox {
         background-color: #f4f4f4;
       }
+      
+      .bttn-back {
+        position: relative;
+        width: 128px;
+        height: 128px;
+        left: 50%;
+        margin-left: -64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 40px;
+      }
+      
+      .bttn-back__piece-text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation-name: spinner;
+        animation-duration: 3.4s;
+        animation-iteration-count: infinite;
+        /*animation-timing-function: linear;*/
+      }
+      
+      .bttn-back amp-img {
+        background-color: transparent;
+        margin: 0;
+      }
+      
+      .bttn-back__piece-round {
+        border-radius: 128px;
+        width: 64px;
+        height: 64px;
+        background-color: #780BFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .project-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .project-wrapper__image {
+        width: 100%;
+        height: 100%;
+        background-color: #f4f4f4;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      .project-wrapper__image--hollo {
+        background-image: url(assets/img/hollo-cover.png);
+      }
+      
+      .project-wrapper .text-box {
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        max-width: none;
+        margin-bottom: 0;
+        bottom: 0;
+        z-index: 2;
+      }
+      
       @media screen and (min-width: 640px) {
         amp-img {
           max-height: 80vh;
@@ -105,6 +166,16 @@
           margin-right: auto;
           max-width: 60%;
         }
+        .project-wrapper__image {
+          background-repeat: repeat;
+          background-size: auto;
+          transform: rotate(20deg);
+        }
+      }
+      
+      @keyframes spinner {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
       }
     </style>  
 
@@ -113,12 +184,23 @@
   
   <body>
     <section class="text-box">
-      <span class="meta-data">2016 / Product Lead</span>
       <amp-fit-text width="300" height="200" layout="responsive" min-font-size="20">
         Felix Lange Portfolio
       </amp-fit-text>
-      <h2>Projects</h2>
-      <a href="hollo-email-messenger/index.html">Hollo - Email messenger</a>
     </section>
+    <h2>Work</h2>
+    <a href="hollo-email-messenger/index.html">
+      <div class="project-wrapper">
+        <div class="project-wrapper__image project-wrapper__image--hollo">
+        </div>
+        <section class="text-box">
+          <span class="meta-data">2016 / Product Lead</span>
+          <amp-fit-text width="300" height="100" layout="responsive" min-font-size="8" max-font-size="40">
+            Hollo - email was boring
+          </amp-fit-text>
+        </section>
+      </div>
+    </a>
+    
   </body>
 </html>
