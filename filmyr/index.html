@@ -1,0 +1,267 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-gfycat" src="https://cdn.ampproject.org/v0/amp-gfycat-0.1.js"></script>
+    <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+    <title>Felix Lange Portfolio - Hollo</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+
+    <style amp-custom>
+      /* Setting up fonts */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
+      }
+
+      @font-face {
+        font-family: 'fantasque_sans_monobold';
+        src: url('../assets/fonts/fantasquesansmono-bold-webfont.woff2') format('woff2'),
+            url('../assets/fonts/fantasquesansmono-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'fantasque_sans_monoregular';
+        src: url('../assets/fonts/fantasquesansmono-regular-webfont.woff2') format('woff2'),
+            url('../assets/fonts/fantasquesansmono-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      /* General rules */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: rgba(0,0,0,0.87);
+      }
+      
+      h1, h2, h3, amp-fit-text {
+        font-family: 'fantasque_sans_monobold';
+      }
+      
+      h2 {
+        font-family: 'fantasque_sans_monoregular';
+        font-size: 1.8rem;
+      }
+       
+      p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+      }
+      
+      .meta-data {
+        display: inline-block;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 400;
+        font-size: 1.15rem;
+        margin: 16px 0;
+      }
+      
+      .text-box {
+        padding: 0 40px;
+        margin-bottom: 40px;
+        max-width: 416px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      amp-img {
+        background-color: #f4f4f4;
+        margin-bottom: 40px;
+      }
+      amp-image-lightbox {
+        background-color: #f4f4f4;
+      }
+      
+      .bttn-back {
+        position: relative;
+        width: 128px;
+        height: 128px;
+        left: 50%;
+        margin-left: -64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 40px;
+      }
+      
+      .bttn-back__piece-text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation-name: spinner;
+        animation-duration: 3.4s;
+        animation-iteration-count: infinite;
+        /*animation-timing-function: linear;*/
+      }
+      
+      .bttn-back amp-img {
+        background-color: transparent;
+        margin: 0;
+      }
+      
+      .bttn-back__piece-round {
+        border-radius: 128px;
+        width: 64px;
+        height: 64px;
+        background-color: #780BFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+       @media screen and (min-width: 640px) {
+        amp-img {
+          max-height: 80vh;
+          max-width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .project-wrapper {
+          width: 80%;
+          max-width: 1440px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      @media screen and (min-width: 1442px) {
+        amp-img {
+          max-height: 40vh;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 60%;
+        }
+      }
+      
+      @keyframes spinner {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+      }
+    </style>  
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  </head>
+  
+  <body>
+    <section class="text-box">
+      <span class="meta-data">2016 / Design Lead & Founder</span>
+      <amp-fit-text width="300" height="200" layout="responsive" min-font-size="20">
+        Filmyr - find the stuff you love from movies and TV.
+      </amp-fit-text>
+      <amp-gfycat 
+        data-gfyid="PertinentInfantileHuemul"
+        width="640"
+        height="360"
+        layout="responsive">
+      </amp-gfycat>
+      <h2>The problem</h2>
+      <p>I just saw the coolest jacket ever in that movie. So where can I buy it?</p>
+    </section>
+    <amp-img 
+      src="../assets/img/filmyr-filter-tab.svg"
+      width="360"
+      height="269"
+      layout="responsive">
+    </amp-img>
+    <section class="text-box">
+      <h2>Solution</h2>
+      <p>Building a community where users can contribute and share their knowledge about the products, places and music in movies. Not to be a competitor to IMDb but instead complement it.</p>
+    </section>
+    <amp-img
+      src="../assets/img/filmyr-start.svg"
+      width="1500"
+      height="920"
+      layout="responsive">
+    </amp-img>
+    <section class="text-box">
+      <p>Filmyr was about exploration so it was built to be a never ending flow of things (not only products but also places and music).</p>
+    </section>
+    <amp-img 
+      src="../assets/img/filmyr-product-details.svg"
+      width="360"
+      height="529"
+      layout="responsive">
+    </amp-img>
+    <section class="text-box">
+      <p>If the user visited a specific movie, actor or anything else we would show the connections that we had. For example products used in a movie.</p>
+    </section>
+    <amp-img 
+      src="../assets/img/filmyr-comments.svg"
+      width="360"
+      height="529"
+      layout="responsive">
+    </amp-img>
+    <section class="text-box">
+      <p>The community aspect was very important and we wanted user to contribute by discussing the content, making their own collections etc.</p>
+    </section>
+    <amp-img 
+      src="../assets/img/filmyr-hunts.svg"
+      width="360"
+      height="288"
+      layout="responsive">
+    </amp-img>
+    <section class="text-box">
+      <p>We also had the concept of hunts, where users would be rewarded for making our content richer.</p>
+    </section>
+    <amp-img 
+      src="../assets/img/filmyr-bookmarklet-start.svg"
+      width="360"
+      height="288"
+      layout="responsive">
+    </amp-img>
+    <section class="text-box">
+      <p>But MOST importantly, we wanted the users to help us get content. We built a chrome plugin that the user could use to easily add something to Filmyr.</p>
+    </section>
+    <section class="text-box">
+      <p>The plugin automatically populated the neccesarry fields.</p>
+    </section>
+    <amp-img 
+      src="../assets/img/filmyr-bookmarklet-picking.svg"
+      width="360"
+      height="288"
+      layout="responsive">
+    </amp-img>
+    <section class="text-box">
+      <p>If that didn't work out the user could easily pick the right content instead.</p>
+    </section>
+    <section class="text-box">
+      <p>And lastly create connections with Filmyrs existing content.</p>
+    </section>
+    
+    <section class="text-box">
+      <a href="../index.html">
+        <div class="bttn-back">
+          <div class="bttn-back__piece-text">
+            <amp-img
+              src="../assets/img/other-projects-text.png"
+              width="128"
+              height="128"
+              >
+            </amp-img>
+          </div>
+          <div class="bttn-back__piece-round">
+            <amp-img
+              src="../assets/img/other-projects-symbol.svg"
+              width="40"
+              height="40"
+              >
+            </amp-img>
+          </div>
+        </div>
+      </a>
+    </section>
+  </body>
+</html>

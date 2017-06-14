@@ -150,12 +150,21 @@
       .project-wrapper__image--hollo {
         background-image: url(assets/img/hollo-cover.png);
       }
+      .project-wrapper__image--filmyr {
+        background-image: url(assets/img/filmyr-start.png);
+      }
     
       
       @media screen and (min-width: 640px) {
         amp-img {
           max-height: 80vh;
           max-width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .project-wrapper {
+          width: 80%;
+          max-width: 1440px;
           margin-left: auto;
           margin-right: auto;
         }
@@ -166,15 +175,6 @@
           margin-left: auto;
           margin-right: auto;
           max-width: 60%;
-        }
-        .project-wrapper {
-          max-width: 1440px;
-          margin: 0 auto;
-        }
-        .project-wrapper__image {
-          background-repeat: repeat;
-          background-size: auto;
-          /*transform: rotate(20deg);*/
         }
       }
       
@@ -192,7 +192,6 @@
       <amp-fit-text width="400" height="200" layout="responsive" min-font-size="20">
         Felix Lange Portfolio
       </amp-fit-text>
-      <h2>My work</h2>
     </section>
     <a href="hollo-email-messenger/index.html">
       <div class="project-wrapper">
@@ -202,6 +201,19 @@
           <section class="text-box">
             <span class="meta-data">2016 / Product Lead</span>
             <h2>Hollo - email was boring</h2>
+          </section>
+        </div>
+      </div>
+    </a>
+    
+    <a href="filmyr/index.html">
+      <div class="project-wrapper">
+        <div class="project-wrapper__image project-wrapper__image--filmyr">
+        </div>
+        <div class="project-wrapper__text">
+          <section class="text-box">
+            <span class="meta-data">2016 / Design Lead & Founder</span>
+            <h2>Filmyr - find the stuff you love from movies and TV.</h2>
           </section>
         </div>
       </div>
