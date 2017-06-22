@@ -61,6 +61,14 @@
         line-height: 1.8rem;
       }
       
+      a {
+        color: #0081FF;
+        font-family: 'fantasque_sans_monoregular';
+        font-style: italic;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+      }
+      
       .meta-data {
         display: inline-block;
         font-family: 'Roboto Mono', monospace;
@@ -81,8 +89,23 @@
         background-color: #f4f4f4;
         margin-bottom: 40px;
       }
+      amp-img>[placeholder] {
+        margin-bottom: 0px;
+      }
+      amp-img>[placeholder].amp-hidden {
+        opacity: 0;
+        transition: visibility 0s linear 0.25s,opacity 0.25s linear;
+      }
       amp-image-lightbox {
         background-color: #f4f4f4;
+      }
+      
+      amp-img.logo {
+        background-color: transparent;
+        width: 100%;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
       }
       
       .bttn-back {
@@ -126,32 +149,14 @@
       .project-wrapper {
         position: relative;
         width: 100%;
-        height: 100vh;
         overflow: hidden;
         margin-bottom: 64px;
       }
-      .project-wrapper__image {
-        width: 100%;
-        height: 100%;
-        background-color: #f4f4f4;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-      }
-      .project-wrapper__text {
-        position: absolute;
-        background-color: #fff;
-        width: 100%;
-        min-height: 30vh;
-        margin-bottom: 0;
-        bottom: 0;
-        z-index: 2;
-      }
-      .project-wrapper__image--hollo {
-        background-image: url(assets/img/hollo-cover.png);
-      }
-      .project-wrapper__image--filmyr {
-        background-image: url(assets/img/filmyr-start.png);
+      
+      .project-wrapper a {
+        color: rgba(0,0,0,0.87);
+        line-height: normal;
+        text-decoration: none;
       }
     
       
@@ -162,11 +167,9 @@
           margin-left: auto;
           margin-right: auto;
         }
-        .project-wrapper {
-          width: 80%;
-          max-width: 1440px;
-          margin-left: auto;
-          margin-right: auto;
+        amp-img.logo {
+          max-width: none;
+          max-height: none;
         }
       }
       @media screen and (min-width: 1442px) {
@@ -175,6 +178,10 @@
           margin-left: auto;
           margin-right: auto;
           max-width: 60%;
+        }
+         amp-img.logo {
+          max-width: none;
+          max-height: none;
         }
       }
       
@@ -188,36 +195,59 @@
   </head>
   
   <body>
-    <section class="text-box">
-      <amp-fit-text width="400" height="200" layout="responsive" min-font-size="20">
-        Felix Lange Portfolio
-      </amp-fit-text>
-    </section>
-    <a href="hollo-email-messenger/index.html">
+      <section class="text-box">
+         <amp-img 
+        class="logo"
+        src="assets/img/felixlangeportfolio-logo.svg"
+        width="228"
+        height="82"
+        layout="responsive">
+      </amp-img>
+        <p>Hey, <br />I create easy-to-use, fun products. I've studied Antrophology and Graphical Communication.</p>
+        <p>Graduated in 2013 and since then I’ve worked on a lot of different projects, some of which you can see here.</p>
+        <a href="mailto:felix.r.lange@gmail.com">Email me</a><br />
+        <a href="https://www.linkedin.com/in/felixlange/" target="_blank">LinkedIn</a>
+      </section>
       <div class="project-wrapper">
-        <div class="project-wrapper__image project-wrapper__image--hollo">
-        </div>
-        <div class="project-wrapper__text">
+        <a href="hollo-email-messenger/index.html">
+          <amp-img 
+            src="assets/img/hollo-cover.svg"
+            width="1500"
+            height="700"
+            layout="responsive">
+            <amp-img placeholder
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAHCAYAAAABIM1CAAAABGdBTUEAALGPC/xhBQAAAIRJREFUGBmlkMEOwyAMQ52Q9jRp//+dY1o7aDKnxzU7zZKBQ/wwSO898Iesys7peM/A4C4iWE1g6aaX8RLgwVL0/bYSADyeA4IoAVck7wh37NsLY9+gqgxTSSpUAnIuPOAEpTSr13n8BECZoINPOY7M14QSIAwuZmitnQ0WfiA7nefv5QMF+irueTFDeQAAAABJRU5ErkJggg=="
+              layout="fill">
+            </amp-img>
+          </amp-img>
           <section class="text-box">
             <span class="meta-data">2016 / Product Lead</span>
             <h2>Hollo - email was boring</h2>
           </section>
-        </div>
+        </a>
       </div>
-    </a>
     
-    <a href="filmyr/index.html">
+    
       <div class="project-wrapper">
-        <div class="project-wrapper__image project-wrapper__image--filmyr">
-        </div>
-        <div class="project-wrapper__text">
+        <a href="filmyr/index.html">
+          <amp-img 
+          src="assets/img/filmyr-cover.svg"
+          width="1500"
+          height="700"
+          layout="responsive">
+            <amp-img placeholder
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAHCAYAAAABIM1CAAAABGdBTUEAALGPC/xhBQAAASBJREFUGBmlkM9LAlEURs/ozBttJnVmDHERWLlwkVSLIFy0aSf0x7aI1hW1KCKM1i0UlMoM7Pkzx+mmaFDL7uZeHpzD9z5Dax3xjzEX7Fv7nbPTC66vaoRhRBTNvYaB3CCLmBmjUtmhenxIEHgzdCnQukfWK1A9KqNMG2UpLFsJGSOciNCYMvkcE5lt9Ef/r8CyDLZKNmtZl+5rh069iek4JDIudlKRCQKRJmk9J1DqO898lgmQrF3dR/cHNG/vaNzU6Pl5vEKOjXwaROakA1xHhCq54PkRyFMiHidI2/gHZQqlImPlMJwigIW7It8y4wxG43khvxNMpahR64mH83vq3R7rpT3CVI6Ty0ca9Rc2V4ds5xyKu/ukPH9WsiGpvwA0oFhW+KN5EwAAAABJRU5ErkJggg=="
+              layout="fill">
+            </amp-img>
+          </amp-img>
+  
           <section class="text-box">
             <span class="meta-data">2016 / Design Lead & Founder</span>
             <h2>Filmyr - find the stuff you love from movies and TV.</h2>
           </section>
-        </div>
+          </a>
       </div>
-    </a>
+    
     
   </body>
 </html>
