@@ -7,7 +7,7 @@
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <script async custom-element="amp-gfycat" src="https://cdn.ampproject.org/v0/amp-gfycat-0.1.js"></script>
     <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
-    <title>Felix Lange Portfolio - Hollo</title>
+    <title>Felix Lange Portfolio - Filmyr</title>
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
@@ -81,6 +81,13 @@
         background-color: #f4f4f4;
         margin-bottom: 40px;
       }
+      amp-img>[placeholder] {
+        margin-bottom: 0px;
+      }
+      amp-img>[placeholder].amp-hidden {
+        opacity: 0;
+        transition: visibility 0s linear 0.25s,opacity 0.25s linear;
+      }
       amp-image-lightbox {
         background-color: #f4f4f4;
       }
@@ -125,8 +132,8 @@
       
        @media screen and (min-width: 640px) {
         amp-img {
-          max-width: 75%;
-          height: auto;
+          max-height: 80vh;
+          max-width: 80%;
           margin-left: auto;
           margin-right: auto;
         }
@@ -139,10 +146,10 @@
       }
       @media screen and (min-width: 1442px) {
         amp-img {
-          width: 1440px;
-          height: auto;
+          max-height: 40vh;
           margin-left: auto;
           margin-right: auto;
+          max-width: 60%;
         }
       }
       
@@ -181,12 +188,12 @@
       <p>Building a community where users can contribute and share their knowledge about the products, places and music in movies. Not to be a competitor to IMDb but instead complement it.</p>
     </section>
     <amp-img
-      src="../assets/img/filmyr-start.png"
+      src="../assets/img/filmyr-start.svg"
       width="1500"
       height="920"
       layout="responsive">
       <amp-img placeholder
-    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAABGdBTUEAALGPC/xhBQAAAV1JREFUKBWlks1Kw0AQx3+7+WitrUYUIyIirVZBKYp3j3rx4Av4JoIFX8aLBxF8Aq9+geJJD5ZWEW3VJm5pmtQkkEARBHFgd2aY+f9mWFY4jtPnH6YnWs/zqFYPCPzfeVIK9qt7mKYZS1OAUor3h03mpjfwvbDWl+imFnrwe6CFnf0wfm5eEPX+AES47V3F+uoL3Y5Hr9VCt8YwMwa9ICCXH0ZKyd2tiicnV7qBEALD6PPlOXw0nrg8PIJyhZmSjSE6TJfKZHJ5jKxItLFPAVEWhCt+OZ9ogWJkNItrCpTnk8tIPtsuMjxRTzQssQGA6HmMtx+p+YrlnS3yU3OcnJ3TaOvYnRq2HsCYnWhjPwC4vrritnHPTVuxUl4kNznL8dkl3Y8uE0MOxYLEXlpjuVJJISL6B81mk3r9KX7dcD+SBV9f38J30bEsKxVEgdQ0FuaLFAoFhOu6pwPVPybfbDd92Q7ur/8AAAAASUVORK5CYII="
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAABGdBTUEAALGPC/xhBQAAAYJJREFUKBWlkstvEzEQh7/N2rtZdjdh0wcKL6lEULWqhAqBK4L/l1vPhRtVD7TqoRUHUBWUqlWlKNlHaJJ1jL1V0gO3MrI9I9vz6ecZO3mea/7DxCJ3MBjydf+Qo+9nqBK0NlynGiY23sY1h253mw+f3tFqPaxSl4AszQm8Nd5sP0e4Ek/6eL5EU6NU2gDmlLMZbn1EnhX/AqR0eLkVsL62Sj4YMeifI4MH+M0IL5AkSQvhNbnoz7B3F7ZUYDWODHmYjbk4OKR3cESx0ibZeEznSRMdhkTNVeJGTMsPFvncAcw7fSlZTyLaH9/Teb3FVIRo1yWo+4RhHbfmko0LU6Bl/i3AFmxu967O+fHtmN9pwdPNt0zjR3z+ckyvd8WreMJOOzLgLo3dblVkx6iuFFjAZHLDz8uUk9Mh10XOC/ULL8mgvKEuFGlZ0s+nNEyxn43/oJRCCIFj/0FpDo0nTVOmsxLTLdRco9XctA5c8wxrVrkUkjiOzYxuAUVR7FWn91z+Amu6lbsZis9pAAAAAElFTkSuQmCC"
         layout="fill">
       </amp-img>
     </amp-img>
@@ -194,12 +201,12 @@
       <p>Filmyr was about exploration so it was built to be a never ending flow of things (not only products but also places and music).</p>
     </section>
     <amp-img 
-      src="../assets/img/filmyr-product-details.png"
+      src="../assets/img/filmyr-product-details.svg"
       width="1500"
       height="920"
       layout="responsive">
       <amp-img placeholder
-    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAABGdBTUEAALGPC/xhBQAAAWVJREFUKBWlks1Kw0AQx/+bbLZGDbaKiJQqFEVEKFJP6sGDB88+gw/QBxD8wJfx6EWvPoC0IIofIAWVqi1pUdtk0ySbuAmkEAqCOLC7zOzMb2b/LOn1eiH+YTSp9TwPx0cnEOJ3nqoqODjcB2MsLh0AOOfwzB0U85sQfihBBCoN4fm+9AFNIwiDAI1WDVHuECDCbe86KK99QVEohNWFcCxUr2/Q5zbYiI7A5fDrTzJzOe4ebYMJCCHQGMFkbgwZXQc3XfCwi9vLM/CPN1hUR731idfmC/YqlWFAHAkJIgncvgtBGdSJaSytlOAV5tF1A9CZb7CpHKJmiQ0miAOBfG/7GbYE2Y6AMjqO4voWMlQDk2tDinH3+JDUxmcKUKte4f78FHddB0yqbQsP1CigvFrCXH4WoQjQbJkpAIn+QafTQaPxLtW1IedDMqBptqX6FNlsNlWkqBSLC0UYhgFiWdZF6vaPzg+uHI146QHwOQAAAABJRU5ErkJggg=="
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAABGdBTUEAALGPC/xhBQAAAYJJREFUKBWlkT1P40AQhp+114ntJED4OGRyBRGiSQUSdBRIFPwC/ik1QldxFJx0BUiATggC4kMK4DiI+GPNLFHS0B0j7e7s7sw777yjkiQp+YbpcW6v98LhwTF/Ts4ocnkVWOXIUZayxFf2rtjY6LC9s0mzOfOZOgGI4wTfm2e9sytZDkaWdhWuq3EcF60VeZGiq31s7BcAz1Osdmr8bEUEYYjpPXDz75JfR7+5vLig4oeQJiwur0jc3pg4EwaWKjhSrYqjKhh/msIJ4OkR/+6axK1x/hSzombYymyPI5sAKKRJwTB5TjZMKQQ7nF2g1VnDqzVJhhne8wuL7WU8zxvno+wUbPVu95a350fmQ40Rxd5NBXwfpSuEQr9eC8jSjPuHe4IgIIoiEVaNWrAAaZZydX7K3+4Zvbchr5mm0D5aqi9FLVo/5jCFTESVtNttjDEisDtikAvtfr/PaxyTClVrEkppCvGU6CLztJ50Wa361Bt1phoNmYxGDQaD/c/f/9w+ALM1lesKfC4rAAAAAElFTkSuQmCC"
         layout="fill">
       </amp-img>
     </amp-img>
@@ -207,27 +214,35 @@
       <p>If the user visited a specific movie, actor or anything else we would show the connections that we had. For example products used in a movie.</p>
     </section>
     <amp-img 
-      src="../assets/img/filmyr-comments.png"
+      src="../assets/img/filmyr-comments.svg"
       width="900"
       height="920"
       layout="responsive">
+      <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABGdBTUEAALGPC/xhBQAAAEFJREFUCB1j/PLly/+Dx54wSInzM6gq8zIwMQDB9dvPGf79YwYxIQJsrP8Z5GTYwAKMIC1Pnn9kkBTjZWBmZmIAAPW2E58bZg9oAAAAAElFTkSuQmCC"
+        layout="fill">
+      </amp-img>
     </amp-img>
     <section class="text-box">
       <p>The community aspect was very important and we wanted user to contribute by discussing the content, making their own collections etc.</p>
     </section>
     <div class="asd">
       <amp-img 
-      src="../assets/img/filmyr-hunts.png"
+      src="../assets/img/filmyr-hunts.svg"
       width="900"
       height="920"
       layout="responsive">
+        <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAbZJREFUOBGFU8lOwzAQfY4XGiddAi0c4IoQEuIDuPINHPlgLogbBy49IIQQtFDSNqvNOA0t1EhYHdl+8bx5s5SlaWrxY7lLOi+R5RVYizss7AhEoQT7Bttvot3XW5bXuLt/w8N4hsA6EgYbcJydDHF+kkDJ3wxsW8HN7TO6bATFBcp62RBLqbETKuhkhr1dtQ7mDp6C8fgD0/sExUKiv6thSf/7K8PwsMDl1e/ofxKEkcHF9Qz9fokgCJqcswWQFTmZJB9nm+UpsLCYTJ7x8kJetqkApWIgVReic7TxbE/BNsKozDsdic/cYGmAeWWpKwUEhdIR334Oj8C9iKMYOu5R/hwVmegocCJ+fCo8Ai8FyoB+AsNBHwvFkS0LdKMEsQ4htK/AJ6BCu74PYo2e7qGqamqhaAoaWf+5h7hGDZMBkkGMMqcLAZwCl6bC9H3+fwpubPOyQEHG5UrycmFR1X7+js1X4IbdUOXTFMzNQRtTqhDE2t42m0cQa4XaGOT0n+BOO42ipWZZrAZr47o6eQSnx/vgQjZ5G1LiJDBqdlkz8D+a7kEHowhSBDCkwrbmiAiBpm5sry8fPZ4X+PsVMgAAAABJRU5ErkJggg=="
+        layout="fill">
+      </amp-img>
     </amp-img>
     </div>
     <section class="text-box">
       <p>We also had the concept of hunts, where users would be rewarded for making our content richer.</p>
     </section>
     <amp-img 
-      src="../assets/img/filmyr-bookmarklet-start.png"
+      src="../assets/img/filmyr-bookmarklet-start.svg"
       width="1500"
       height="920"
       layout="responsive">
@@ -239,7 +254,7 @@
       <p>The plugin automatically populated the neccesarry fields.</p>
     </section>
     <amp-img 
-      src="../assets/img/filmyr-bookmarklet-picking.png"
+      src="../assets/img/filmyr-bookmarklet-picking.svg"
       width="1500"
       height="920"
       layout="responsive">
