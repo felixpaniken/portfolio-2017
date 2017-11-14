@@ -1,0 +1,340 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+    <title>Felix Lange Portfolio - Filmyr</title>
+    <link rel="canonical" href="https://felixlangeportfolio.netlify.com/backe/index.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+
+    <style amp-custom>
+      /* Setting up fonts */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
+      }
+
+      @font-face {
+        font-family: 'fantasque_sans_monobold';
+        src: url('../assets/fonts/fantasquesansmono-bold-webfont.woff2') format('woff2'),
+            url('../assets/fonts/fantasquesansmono-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'fantasque_sans_monoregular';
+        src: url('../assets/fonts/fantasquesansmono-regular-webfont.woff2') format('woff2'),
+            url('../assets/fonts/fantasquesansmono-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      /* General rules */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: rgba(0,0,0,0.87);
+      }
+      
+      h1, h2, h3, amp-fit-text {
+        font-family: 'fantasque_sans_monobold';
+      }
+      
+      h2 {
+        font-family: 'fantasque_sans_monoregular';
+        font-size: 1.8rem;
+      }
+       
+      p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+      }
+      
+      .meta-data {
+        display: inline-block;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 400;
+        font-size: 1.15rem;
+        margin: 16px 0;
+      }
+      
+      .text-box {
+        padding: 0 40px;
+        margin-bottom: 80px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      amp-img {
+        background-color: #f4f4f4;
+        margin-bottom: 40px;
+        max-width: 1800px;
+      }
+      amp-video {
+        max-width: 1800px;
+      }
+      amp-img>[placeholder] {
+        margin-bottom: 0px;
+      }
+      amp-img>[placeholder].amp-hidden {
+        opacity: 0;
+        transition: visibility 0s linear 0.25s,opacity 0.25s linear;
+      }
+      amp-image-lightbox {
+        background-color: #f4f4f4;
+      }
+      
+      amp-img.logo {
+        background-color: transparent;
+        width: 100%;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .bttn-back {
+        position: relative;
+        width: 128px;
+        height: 128px;
+        left: 50%;
+        margin-left: -64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 40px;
+      }
+      
+      .bttn-back__piece-text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation-name: spinner;
+        animation-duration: 3.4s;
+        animation-iteration-count: infinite;
+        /*animation-timing-function: linear;*/
+      }
+      
+      .bttn-back amp-img {
+        background-color: transparent;
+        margin: 0;
+      }
+      
+      .bttn-back__piece-round {
+        border-radius: 128px;
+        width: 64px;
+        height: 64px;
+        background-color: #780BFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+       @media screen and (min-width: 640px) {
+        amp-img, amp-video {
+          max-width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+         
+       .other-projects amp-img {
+         max-width: none;
+       }
+      }
+      @media screen and (min-width: 1442px) {
+        amp-img, amp-video {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 60%;
+        }
+      }
+      
+      @keyframes spinner {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+      }
+      
+      .img-backe-logo {
+        background-color: #EDBBA6;
+      }
+    </style>  
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  </head>
+  
+  <body>
+    <section class="text-box">
+      <span class="meta-data">2016 / Dream-to-reality Director</span>
+      <amp-fit-text width="300" height="200" layout="responsive" min-font-size="20">
+        Bäcke - A smartphone for cool people.
+      </amp-fit-text>
+
+      <h2>The problem</h2>
+      <p>Tech specs doesn't make you feel anything. Why are so many companies still trying to sell technology using a tech spec when most buyers base their decisions on feelings?</p>
+    </section>
+    <amp-img 
+      class="img-backe-logo"
+      src="../assets/img/backe-logo.svg"
+      width="1500"
+      height="900"
+      layout="responsive">
+      <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAABGdBTUEAALGPC/xhBQAAAIVJREFUKBWlUMENgCAMpMD+Y7iEO/jw4Qj+3EDFHlAKIT4ITYD2rndtoGtdgpkIO6GN0taA2rKY/+HcoAoiY3AQeG2mII5cVaeueKtBEbosZhPntRWGlrlqJkg1KF/JieSBEyyFDZAjSMhUViOYeO6EdvfbIQLoBoIMvtMG/ti3c3Bo0/4BhfAS7OoKfa8AAAAASUVORK5CYII="
+        layout="fill">
+      </amp-img>
+    </amp-img>
+    <section class="text-box">
+      <h2>Solution</h2>
+      <p>Together with some friends we set out to build a phone and a brand. The result was the Bäcke Smartphone. Our focus was emotional response, not technical details.</p>
+    </section>
+    
+    <amp-img
+      src="../assets/img/backe-jungle.jpg"
+      width="1500"
+      height="1000"
+      layout="responsive">
+      <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAABGdBTUEAALGPC/xhBQAAAgtJREFUKBUdkctu01AURZft6yS2805IiSC0lKql4ncYIvEr/A/fwA8wYsCAIqAVFW2haRKnjp/3wWlHV1c6Z++99vHev3vr1tkNTZWR3q8Y9kaYIKKxOUWZ04kjNlcZJ/sHfP1xxnazpc4toVKssxz15/I7Ms/5+SWLvRnOeli34/r6iqZu8Hz5F5rP6ZIojnGeox0pPM8nUD7q9fEpld2RbTIOnu8znc85+/Xt0ZnCyquonUcY+ey29+hKEwaQNxVeYFHTvTnWajCK6XjCYnFItzsk3X2iE42YTMb8/H2O3/VEoCKJ2hgLSgc0aNR6vWQ2mfNy/xVx0pX4iCCcHr3hZDQjirqMRhPh/4JyobgH1J4liAPsvSTYpCtCPyTp9+k4K8sGfMugP6T37JB22GJcZ/SXF5RbjSkNrcBQNu7RSHWiFtbXlFWO3RiSdsJqvaYsK1bDFCVtW6cpikIWWzShwYY1XdWmpVooIwVWtcEPBrKk6SYJ64dU6iEu6LpgPHhCPx6KSYnXC7jL74RTEfgGdZveCRv0+oUsROJmuF39FWXYPF2AB4nrcfTimHSwI8+2lHWFWGK0IRgM1Yc6l3uHjm2RspVSqzQnlIG2RDCC4uRKRkthvk+Z54IS0jQaLQJq9S/7OJ3GXF5c4QQDs2KWjOkL3255i237xF5OnTWPPSRSoKMiMCWNiP0HUg4Sb2giH8MAAAAASUVORK5CYII="
+        layout="fill">
+      </amp-img>
+    </amp-img>
+    
+    
+    <section class="text-box">
+      <p>Bäcke is about; passion, respect and sustainability. We built our brand around those values and tried to surround ourselves with people who resonated at the same frequency.</p>
+    </section>
+    <amp-img
+      src="../assets/img/backe-phones.png"
+      width="1500"
+      height="900"
+      layout="responsive">
+      <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAABGdBTUEAALGPC/xhBQAAAXxJREFUKBVlUk1Lw0AQfZtNNqnUYhU/Ay0FEQ/e6keP/hf/oEcPHr2oZysIUlBqQaIWmzTZNh/ObGwUnWR3s29n5r2ZjQjDsMC3FUX5KYQwyGLPG8b+7hm3eeK4weMDnp4HyNIUzeYackgEQWCC/B0fnU6LPeHYDoSUUO4SmMYkYMKb6ytcXpwjnsbo7O7hqHeK4d0ttJ5ienCCzY0GlLJgFQpzTQlUjWX9KJjpBGE4oYCEhsZy3cXxfhvj4BWxzGBJy0idp3PilTRKMwpYiyRZxqicgh5BRbhUytZ6G6NoBkF1ljh5iaptpQI6+Wd5ViBtrKJW34RbvKHIyYlEmMJp4b5x6VUP8jxnamNMEEwSfKQS3uc7HD2mYEGvMEHlVPpWt7DCcn0fOtHY9lsYDV/Q798ToUD3sIue4yLNNDFSiJBVDsH/ARMnSYyEboDvWill9MVxTI4CnufRUMi5DDLbtgm3zJmIoujMoOUksiwzDeV1YYsG/z4jzGT7Ajigo5gTfr04AAAAAElFTkSuQmCC"
+        layout="fill">
+      </amp-img>
+    </amp-img>
+    <section class="text-box">
+      <p>We designed. We made initial sketches and had a clear idea of what we wanted. Together with the amazing talent of <a href="http://www.peoplepeople.se/" target="_blank">PEOPLE PEOPLE</a> we turned those ideas into an actual product.</p>
+    </section>
+    <amp-img 
+      src="../assets/img/backe-posters.jpg"
+      width="1500"
+      height="1000"
+      layout="responsive">
+      <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAABGdBTUEAALGPC/xhBQAAAeZJREFUKBUdksuKE0EUhr+69DWJMcHRAQdRUBBcqbgRFz6JT+Vb+CA+giC4GUZkGJ1JMkknfakq/+7qTXefOue/HfP965dUzmd4n5NiwmaW2HeMx7gM6zP6Y4O1qmEYuh6T5QztkbY54A0J1Dg1mYSxNdb56YJVLcSeNLSgQcma6dv1Eac7ToN8+WBF1IA+GUwYiAI3Wc1gAgxC9SWBKAwv/IxgR2oC7fc4DbX9qSEsX7EzL9nE5zRnn7i8qfl56Tg8/sw2f82mfcp+/ZG/qv/4FdhVb8TEItWI64njQXo2Qmm2DMuGxWJNFZ0IZOyvb5nJk9urPzxcL7k4v5DkUfj4SIJ1bjLpdntiXmne/p5i/UTFQn547rYbytWcIci82SPiStprGf2v5dS1+NB11Gcznn14S557ZDIpm1Pq8mjIi3fvKYuCRUpiVFGeL7DHG4yxZHWBT4rHt9eYu54oE5WiTJNhejdChU4GBqwacqtIFZ8Jp8nA0Hb4OMj93W8cV4quwwrNGWmM8n7opriMZCoomSbXG+1EUUuiIu1bbFIkYqcjSqVMyTJ8VWgXtDbjchmnkhUDcEWlXXAaPhC60xS/b3b33yo15kU5DYpBqEb5CDIrvFgEscglSw3tgXxWEyStH5no/3+TtfVlnIfb+gAAAABJRU5ErkJggg=="
+        layout="fill">
+      </amp-img>
+    </amp-img>
+    <section class="text-box">
+      <p>We did photoshoots with <a href="https://www.lundlund.com/johnny-kangasniemi/">Johnny Kangasniemi</a> ❤️. Resulting in two beautiful posters and many inspiring talks.</p>
+    </section>
+    
+    <amp-video
+      autoplay
+      width="960"
+      height="540"
+      layout="responsive">
+      <source type="video/mp4"
+        src="https://felixlangeportfolio.netlify.com/assets/video/backe-loop-720p.mp4">
+      <source type="video/webm"
+        src="https://felixlangeportfolio.netlify.com/assets/video/backe-loop-720p.webm">
+      <div fallback>
+        <p>This browser does not support the video element.</p>
+      </div>
+    </amp-video>
+    
+    <section class="text-box">
+      <p>As big fans of <a href="http://ekrobert.com/">Robert Ek (kreationsministern)</a>, we were honored to have him produce a loop to promote our phone.</p>
+    </section>
+    
+    <amp-img 
+      src="../assets/img/backe-material.jpg"
+      width="1500"
+      height="900"
+      layout="responsive">
+      <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAABGdBTUEAALGPC/xhBQAAARdJREFUKBWFUcFOwzAMfU7Srq2gkzgghDhw4MBH8P9nrhw4Uo0JobFNbdqSBidNoNEmESnxy7P97DgEwPL2izIJEgRrmLIz7U5yXncnj9g/+Xh3qF/EwDuMA/O2DEIOE5w85zP+W4kAzUU5zSLLJcpCIs8FKrYgibfmiGkKQUEjEbCh7aIQeHxY4/5uDT0Y7p7w8rpjy9IhJvaQCETy5rryAnVVwlgJ3Wo8696PIcZEKyKIVvAQ61phJQlXlzkKRRjGHnmmTqq7nJMOlBIgbrnTBp/7AbtDh82HRtt980D5h/57wjgabLYDdP+Fi7KF5aTm/Yj9YYxNJtZ9TDrW4BZC8MSns1WXCk7gaUHcMl4t7udgz2QTHT+UB2r3Y0dqwAAAAABJRU5ErkJggg=="
+        layout="fill">
+      </amp-img>
+    </amp-img>
+    <section class="text-box">
+      <p>The material was a flax-plastic, made with 40% flax fibers. It's more durable and eco friendly than regular plastic. It also gave the phone a nice feel. A major bonus was that the plastic was 100% produced (and grown) in Sweden.</p>
+    </section>
+      <amp-img 
+      src="../assets/img/backe-phone-light.png"
+      width="1500"
+      height="900"
+      layout="responsive">
+        <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAABGdBTUEAALGPC/xhBQAAARFJREFUKBWlUU1uhSAQ/kDEmLrSvbu+xDMYb9NTeRzv4MJLvCYNVnwidAbL23T3SjIBhpnvZxDGmIB/LJV6Q/iLI4TAlQ+0A1LKWM45fuP1BFiWBfM8o65rDMOA43hAqRy7/UaeC7gjoCjfsO+W7hpZlsVQCW2aJozjiK7r0Pc9jPmC1iXOw0AGgc065EWJz/sduS4iEYNcmkiKcw7rusJaC+89MbqYiwWsliR7z1ZOnOcVTC6TF76k4JyQv/5pl6AzNcVacXGmvucMmqbB7faOtm15NtE/exWelJAiIRV5lmRL05uOA41E6Ru3bQOHUgpVVUWZicX7E4r8EkrMMwH/CM9AJABOvrIUsXy80ph6fgC2bYQkzFVQzQAAAABJRU5ErkJggg=="
+        layout="fill">
+      </amp-img>
+    </amp-img>
+    <amp-img 
+      src="../assets/img/backe-phone-dark.png"
+      width="1500"
+      height="900"
+      layout="responsive">
+        <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAABGdBTUEAALGPC/xhBQAAAShJREFUKBWlkd1KwzAcxU9KRtvJkDp1ewWRgnfuAUTcYOBD+HQd3orX3gg+hDfqmBe2WvqV0DT+k9EgeOVMaEmTnnN+p2VFUWj8Y3h/0Wr9O4v3BnVVIVmtUJYF5vMFomgfXaeRpR94enzA3miEq8U13jcbHE+m4JzD8zw4g0YIJEmCPM8RxzG4x1DWNd5ennF/d4vx4RQXl0us168Ih0MKOIAh+lFBg74H0jRF2yqoTsFQyUYg//pEVRUgBQQFCSGJrrPwzsDUa9vWbvZdGfOgaTKzSy/YNWNgdBl8M1yFwYBjNjtHlmWEFyEMQxIAUkxwcnqG8dHE9jboQRBs8cmE9b/RpDZNYw9837cpWxINKaV99v0ASilHYEicgeXZ4cbJ5WYHnZN8AwuYiePZ0aQVAAAAAElFTkSuQmCC"
+        layout="fill">
+      </amp-img>
+    </amp-img>
+    
+     <section class="text-box">
+      <p>We made two different colors, both with the same material.</p>
+    </section>
+    
+    <amp-img 
+      src="../assets/img/backe-prototype.jpg"
+      width="1500"
+      height="900"
+      layout="responsive">
+        <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAABGdBTUEAALGPC/xhBQAAAeBJREFUKBUdks1u00AUhb+xx544jtU0NKEVLeqilbJBLNiw4kVY8Qq8AC/GkiWIHSz4UVREQ0CJm8ROxvaMzU3GsmzNXN97znes3r193Tlf4VuP0QZUgPMtXdsSdB1lvkYHIVVT8+tuzrbYS51i2I+oXIuOY03goJPrsMJAo6OQJOnJ0zB6NObh75xivuL8JGacxmz3ll1lMZnU0inSNKUoC8JQ4xsvrRyVgkoKV5sau1f0T8dkvhQlhQxs6AqNDbfo1XLNZDKmF/UIdAgROOdQSklvxfXVJetS5N//QZuYtUzOVUndWqpFJwrE+67YkqQDojCmkY9Nz9AJhyBKeD69RYvnj18M+XJBkmUy9YT7xU8qX6OHw1OB1rDfiQWVEcfRgSOdNBuMzjEXU1bLf5S2BgFrjOHx5JJAJfhv3wkur54wOjvDRBFtY4mVkNUxLSFOD2haRb7Kqfe7I+SqqqjrPYMs4WZ6g85E0slwxCoO2eQPNBJGJPEt8w0fPr9nNvtNPxQmbXPk4g6I6xbr7DG5QJbIitC9FCfvtnY04u2Q87PrIbOvn7i/+yGqArEmt/gTUZJWR+08WpnBm0wiQieMLp5ibSmnhwJLmvV48fIV3nux7w/b2NJi5cyW8vPJ/n8uV+wVnqkg6AAAAABJRU5ErkJggg=="
+        layout="fill"
+                 >
+      </amp-img>
+    </amp-img>
+    
+    <section class="text-box">
+      <p>Did you actually build a smartphone? Well yes and no, we were ready to go into production and had everything set up (including a working prototype). But the initial costs of doing hardware were just to overwhelming. We'll be back though...</p>
+    </section>
+    
+    <section class="text-box other-projects">
+      <a href="../index.html">
+        <div class="bttn-back">
+          <div class="bttn-back__piece-text">
+            <amp-img
+              src="../assets/img/other-projects-text.png"
+              width="128"
+              height="128"
+              >
+            </amp-img>
+          </div>
+          <div class="bttn-back__piece-round">
+            <amp-img
+              src="../assets/img/other-projects-symbol.svg"
+              width="40"
+              height="40"
+              >
+            </amp-img>
+          </div>
+        </div>
+      </a>
+    </section>
+  </body>
+</html>
