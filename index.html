@@ -7,6 +7,10 @@
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <script async custom-element="amp-gfycat" src="https://cdn.ampproject.org/v0/amp-gfycat-0.1.js"></script>
     <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://felixlangeportfolio.netlify.com/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://felixlangeportfolio.netlify.com/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://felixlangeportfolio.netlify.com/favicon-32x32.png" sizes="32x32">
+    
     <title>Felix Lange Portfolio</title>
     <link rel="canonical" href="https://felixlangeportfolio.netlify.com/index.html" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -83,6 +87,10 @@
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
+      }
+      
+      .--center {
+        text-align: center;
       }
       
       amp-img {
@@ -207,14 +215,14 @@
          <amp-img 
         class="logo"
         src="assets/img/felixlangeportfolio-logo.svg"
-        width="228"
-        height="82"
+        width="320"
+        height="180"
         layout="responsive">
       </amp-img>
-        <p>Hey, <br />I create easy-to-use, fun products. I've studied Antrophology and Graphical Communication.</p>
-        <p>Graduated in 2013 and since then I’ve worked on a lot of different projects, some of which you can see here.</p>
-        <a href="mailto:felix.r.lange@gmail.com">Email me</a><br />
+      <section class="text-box --center">
+        <a href="mailto:felix.r.lange@gmail.com">Email me</a><span> - </span>
         <a href="https://www.linkedin.com/in/felixlange/" target="_blank">LinkedIn</a>
+      </section>
       </section>
       <div class="project-wrapper">
         <a href="hollo-email-messenger/index.html">
@@ -249,7 +257,7 @@
           </amp-img>
           <section class="text-box">
             <span class="meta-data">2016 / Dream-to-reality Director</span>
-            <h2>Bäcke - A smartphone for cool people</h2>
+            <h2>Bäcke - A non-techy smartphone</h2>
           </section>
         </a>
       </div>
@@ -279,7 +287,7 @@
     
     
 
-      <section class="text-box">
+      <section class="text-box --center">
         <p>Hosted at <a href="https://www.netlify.com/">Netlify</a> ❤️ </p>
       </section>
     
