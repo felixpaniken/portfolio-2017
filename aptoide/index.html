@@ -104,14 +104,6 @@
         margin-right: auto;
       }
       
-      .video-container {
-        background-color: #f4f4f4;
-        max-height: 80vh;
-        max-width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      
       .bttn-back {
         position: relative;
         width: 128px;
@@ -167,26 +159,36 @@
         .other-projects amp-img {
          max-width: none;
        }
-        
-        amp-video {
-          max-height: 80vh;
-          max-width: 80%;
-          margin-left: auto;
-          margin-right: auto;
-        }
 
+      .video-container {
+        position: relative;
+        background-color: #f4f4f4;
+        max-height: 80vh;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+      }
+      
+      .video-container amp-video {
+        margin-top: 45px;
+        height: 70vh;
+      }
+        
       }
       @media screen and (min-width: 1442px) {
         amp-img {
           max-height: 40vh;
-          margin-left: auto;
-          margin-right: auto;
           max-width: 60%;
         }
-        amp-video {
-          margin-left: auto;
-          margin-right: auto;
+        .video-container {
+          max-height: 40vh;
           max-width: 60%;
+        }
+
+      .video-container amp-video {
+          margin-top: 45px;
+          height: 30vh;
         }
       }
       
@@ -213,51 +215,121 @@
       <h2>Solution</h2>
       <p>Prune away what is not used, enhance the experience for the flows that are loved.</p>
     </section>
+    
     <amp-img
-      src="../assets/img/playguiden-start.svg"
-      width="1500"
+      src="../assets/img/aptoide-problem.svg"
+      width="900"
       height="920"
       layout="responsive">
       <amp-img placeholder
-    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAHKue4KAAAABGdBTUEAALGPC/xhBQAAAZ9JREFUKBWdUctKw0AUPRMT0TYWlKoFlSLio6CCG0URN4KgoAjFhX6KLlREv0L6AS7VZbsRwUV9rVy50FJsfDS2ediYxIwzU20RXTkwd4aTc849c0Msy6JgS+Ll5OQU5BuRLy6vIElSFenqm0W0Mwqz/FyncA1fkmmaWFhew8R0UgAkm83SN8dhtgQDA/1ViWEYmN/dQyQag9wcxsuDBk+7x3lqH+BtC4UC5afrudTzPGqYJs2k0wKr5RIN/igyx8ZWVxAeHEe8Q8GjpaCs5ZDZ2kAkEoEg5NPXaM+HkRhqRuHsBr6kAltfdrz30eEhNWyL+r5PHcehuq7XcpFcLkfv7u4FXS+V0NbaCkIIGtiYRkdH6pNh6bG5vY0g+GBk8uVfPygVUxfiHcZTFEV8FBn5rVKpIJU6gCvFoPYMI9GrYiYuI3PrQSt5cNgs7dci4jEF64z7y4DHWlqcw9TUJBSZovj0yGwbkOwOoREuXN+Hw8Jpz0WRQrRnpZaAA+GQAr3IhYCqtrCtCnIQBJDY730vl9H0Q8Eea9v2sVD8s3wCNHHOWzbndyUAAAAASUVORK5CYII="
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAFo9M/3AAAABGdBTUEAALGPC/xhBQAAAWdJREFUOBGNUttOwzAMPUkv61o2BOL/Pw9pEjBUytZrQo5bp1Tbwywlvp/Yjk3TNB6BLK+u62DUkopmzGqp6xrH43GOvXx5VFUF7/0aQRCSPZ/Ps7Tcdpom6JGIvX2B6y2sladvMTb5QZEw4vJFQjWXVjh1gdQME4om7XeZcOec8NiaaOHqfoCxC9ApMPV4sAbNvsfnXhYPixyGQbRxHIWHl2aiQSo3FuqkRxDatoV0ETpxHHDgRIsBRVFItg2O1BqRkySRgJTzGC4eY5+geF6Gs4yZETdz+P2QRLmqtzsBq/sxKXZ5Op1QluXc6b9cfon+vJpZPzeKFAHyPMfhcBAAzjLLMhlXP04ogs+G5jm+NE3jhDYAVHRDGBSXASHR+fCSl0p0aRhPihXM6vZm6bt889nxEY3ceBWdpVLm0aoosypdFQUw35+NH65AXgJJrmbAhVWq3w3KV4/8abWrpCt9888a8Cj/AxSdydTk6hr7AAAAAElFTkSuQmCC"
         layout="fill">
       </amp-img>
     </amp-img>
     <section class="text-box">
-      <p>This was an experiment on the side of our regular product (a what's on tv app) which demanded that we would iterate quickly. The idea was to build a native app at some point but to start, our 2 man team would use the latest technology ( as of 2013) to build a "web app". </p>
-    </section>
-    <amp-img 
-      src="../assets/img/playguiden-whatsnew.svg"
-      width="1500"
-      height="920"
-      layout="responsive">
-      <amp-img placeholder
-    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAHKue4KAAAABGdBTUEAALGPC/xhBQAAAYBJREFUKBWdUT1LA0EQfXsfQfw4jIWgoCKSVDFWgrFUIlj6B+zEzr9gTGtvL/gT7CIeBNuYUrAIyZFrIrlLLnf5uBw5d/a8U7FzYIfdtzNv3sww13VDcJPIVasvYDGi1F7rkCT+QYht2yFZpVIJkxDKIZMGgwEahoHJZCIApd1uYzgeo9+1kM1mIlbHcfDw8Y6AVwwZ4LseOo0Wbs/OoVAeYwwXm3sYOh2sbWTAi6LmqYLyT1GB/nCC4er+DjuH+1wSw8yfIggCXG7tQdO0qMTp6jaWugGKR8cIplPqLVEtZkCM6xp3oZgLfN8XughnhmGEzWaL7rB6Payk0+JT5mPK53e/hzfl1KVyGbNwJoJ/OWr/C+AycXNdgqpGXYom6G80GqFQOECxeALbsbAwv4j0clSNJHmeJyjq9bqIjQmSHmiWMpPEYk0uuW/ZSMlKclRJBh2Fx1BsbIkCAnRdh2mawCxAau4NT/ozUpIixkoqaEG01VwuF+eDcWmPyesfl0+ERLSSunXkLAAAAABJRU5ErkJggg=="
-        layout="fill">
-      </amp-img>
-    </amp-img>
-    <section class="text-box">
-      <p>The starting point was "what's new". Which would in time turn into a personalized flow based on what the user was saving to their list. So if you were heavy into sci-fi we would eventually highlight sci-fi in your feed. At the time this made a lot of sense because both netflix and HBO mostly had content that had already been aired on TV.</p>
+      <p>So many ways to discover apps in Aptoide, yet our users were mostly searching. After going mapping the experience of our flows, the design team quickly understood why.</p>
     </section>
     
-    <amp-video
-      autoplay
-      loop
-      width="1920"
-      height="1080"
+    <amp-img 
+      src="../assets/img/aptoide-bottomnav.svg"
+      width="900"
+      height="920"
       layout="responsive">
-      <source type="video/mp4"
-        src="https://felixlangeportfolio.netlify.com/assets/video/playguiden-save-mobile.mp4">
-      <source type="video/webm"
-        src="https://felixlangeportfolio.netlify.com/assets/video/playguiden-save-mobile.webm">
-      <div fallback>
-        <p>This browser does not support the video element.</p>
-      </div>
-    </amp-video>
-
+      <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAFo9M/3AAAABGdBTUEAALGPC/xhBQAAAsRJREFUOBGFU0trE1EU/u6dZ5NmktCHitqCVlvE0o2PFkpBBEsrProSXQj+ABeCS8GF/gFXKv4FQaz+ArMTShWtUBqphSRtkzTJTN7zup470QrZeGDmzj33O+ee831n8PPXvmi3XMFBVrMPgJ18XrhNR3CTfKWqA0jMauaDcMp7ot1oCtZoNIRtNxEEPlRVASuWSyI5aIFxjvXv+1BL1SJYpw6z6lPeGPjwYBouM9AaTQKMgdXrdVGl7JxCUqkEmLxlfesdPmae4vG1ZzjesmCuObBvziPbifcAo8MDMAwTgaCbmRatnNGl30pQU5aJrquBia7sBo1agIEUohLjMfLLuuWBU2DQ4wKByyCEwOCo9JI9ePRW7OTyombbxEpbdD1fuF5H7O6WRfnAFqoEPXk5g9npu7iuHcNI/RT4ZgGvbp/Bw4kFRICVq28wNTaBAaZAJI9AX2a4327L2B5geX4RnKkIRQCiAiF1oAfuXwCDXSwhVPTIIQuUFvgENej5/CUvps+miP0wOvA7lNYEKnWBRIzYlW06ThNhGKJFiprpEIqiwrJiRD3r1aB6ceodGBqh1B6gsEiXKGOkxfMXGdxaAVYzr8GhYO7CEi6dm0L9q4NhYxxjQyTD+09QZiaBKxex13WxX3BxejxB+D/W7VSQzW0gm9+AX9lFcruCk24ellGBWzhAmN1BuLkNv9HGWi1HevaajXiUOZbm7uDGwj2qW7oE3G6HelFgGjHahQgXZ6ERU0EY4HJRQa51SCOIXwGNwgzJrcYRch1MJwLUXv4woHPNgOd50Rxoqk5rb3horjlOHE1BjcXh+YG8nJgiwYjBgFaZU1IPi9gj45whaSVh6J3omya8IZotDz+2atANHgVJoCBZSHi4jgIjTQnpD5Am59j3Bc5PpmGa6r9xjU77Xt06tZXoc/ZtD1Xo80fb/wVL0G8NxE+nRH5AswAAAABJRU5ErkJggg=="
+        layout="fill">
+      </amp-img>
+    </amp-img>
     <section class="text-box">
-      <p>When the user tried to save a movie to their watchlist, that action initiated a signup flow if the user was not already signed in. The idea was that since you had already found something to save, signing up would be an easy decision.</p>
+      <p>First we made the arcitecture easier, reducing 8 main views to 4. We also chose to place the navigation in a bottom bar, which fits better with the bigger phones of today.</p>
     </section>
+    
+    <amp-img 
+      src="../assets/img/aptoide-start.svg"
+      width="900"
+      height="920"
+      layout="responsive">
+      <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAFo9M/3AAAABGdBTUEAALGPC/xhBQAAAjVJREFUOBGFU82K01AU/pKbpG2SdjptYbooKIyoDOJGxYUwW1/Cp/EBfAN3gjthcKWCKxeCIiijA5ZRGDo41HbaJLdt0iQ3npufW7QLTxbncO453/n5TjTOeTa5DAFpRHGcadIAif7y9YnUxdPzFx+yJE0y+arnXk3DfD4rTOn9PQ3RaDC4tglDuts7JpjIsZCn2PU6UrA8JXf4/gzhernBkNbHL+e4c2sPq9UKhmnDsoqMHFMG/Lrw8e77MxidezjtH+LRgfRSw4UCMvqORm9wf8rRtI8rN9RoF+MFWs0GskxA0DhNpxypmj1YxIiilAIy9DoN0Ky5qBIiiWDXYuy2GLwgUiVUAHQD7d0u7HoNcz/ZDhidDfH0yWN8Ph4iKbcko1STAQ+pdguCdjb84ePqwMlR1B7en7zFlcTDzVEP7YeHqoRCGE8u0XSpe3parTVqtv43glUjeEE1NR2WSUYpCqFyhLSLT18nOD3zAVFMozEDN/Y7uH29jVrJURW/BXD06hse3B3ANAQcxwVjDHEUIUlSRMKg1mpVbq7VkJVX1zUs6CLS1U9MWY/ItmEyHXGri4Do/C8A3QRsy4DF+uA0zk7XpU6aOPcSTGcbgqqCWx3IB56E8JZj7O9dQyvVoXs++q4N98Ct8pTenELlog7WdDcenxAfPjIeQAtjTCL5B5QXVsWS3urAcSx03B4GXSKbKONlsJNqELSff2WLBbpm8OU6P2uRFnzrtESd7tuxLXXmFdAfcNb5Pu0B8YUAAAAASUVORK5CYII="
+        layout="fill">
+      </amp-img>
+    </amp-img>
+    <section class="text-box">
+      <p>The look and feel was reworked, more white space, bolder typography and a card based layout.</p>
+    </section>
+    
+    <amp-img 
+      src="../assets/img/aptoide-search.svg"
+      width="900"
+      height="920"
+      layout="responsive">
+      <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAFo9M/3AAAABGdBTUEAALGPC/xhBQAAAf5JREFUOBF9U11v0zAUPbYTt02atnQbIMTbJJCGmKa97SfwS3lDQkhM8BcQPIDYJCRepmlDXVfKmrZuQ2yubewgRcKJ6pvrcz/OPS4ry9JMZwqwhl3MGqDF37w/t7s/evnqg1FKGXvKnZcxrFdLb1rvza1CryfQz1I4xN5OFzIRDuEc3z6fg4ukcSg5wGazanJY6+OXKxw/uw+qhiTNkKa+nv8lwNX1L7w9PcXu3oOYzgZGgP04ev7YbmDMkfF2oPZjssSg6MEYDU10itzHRu6LZUWN1QQw2B33KItL0JQw9RZZp8LOKIUFhxV70IQdjsbEQGI234bzJsN8PoNar9HtdlHrpsmYIZfEXUoXKfjfBugrAoSkIs7PMBr4sVp0tBYka+dugSRRMPSEFQHDYkgTAtXnkKkO54hzCB5Fs/j0dYrvF3eA/u3cjJR8uj/G4ZMROtLLHPCtBK/fneHk+BEyuiB53ne4qqocc0XTuTfohFi3R5LByy1TeieTG1KDubEVRQEhJC6v1wEW91YCy3+zqXB5MXWyCiEoWKCuDW5/ekoxmox2AnIyraCXZzA6SG47ETg68JT+n4A6YLlAsp+Bp8LRgG2L2VpOyH/jGx2DN88lUtPHwcMXWJVb+vtZKiRIzShHu+GWChZcrraOv6693lxwukUMeSbjNQ8F/wAj49RwFA/6GgAAAABJRU5ErkJggg=="
+        layout="fill">
+      </amp-img>
+    </amp-img>
+    <section class="text-box">
+      <p>Our most used feature was the search, so naturally we wanted to build a great search experience. First of all everything is now searchable, apps of course but also other users, app bundles and categories.</p>
+    </section>
+    
+    <amp-img 
+      src="../assets/img/aptoide-appviewsocial.svg"
+      width="900"
+      height="920"
+      layout="responsive">
+      <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAFo9M/3AAAABGdBTUEAALGPC/xhBQAAAm1JREFUOBFlUk1oE1EQ/t57u8ludpM0MSY1KlJKLQqiePFixYte9KDgyYvoTT160JN40ZMXUXoXf8CDXoogHupFRaQICmJFe6hSW21iaJtsN5v9cd5LNhvMwO57OzvzzffNDGs2m1HtrwsOsortg0mP/OAzL7/IE5Cex0/fRyeOTkXyrmIZ53gy81wFqJzVugvTFLAzejfl2OEj0bmz51WKivDcNdSWOapj2W490ypg9u0AhkSb+7SEA3tKcF0XWsqCCDXoJvFRpei1vLIOxjhSGkOj0VDuwBsIkJ5Aj+jRcffOtMoWKSTSVv60kMuaiKIQIcnJWl3wvvaNVgftdkABEUpFk8qpKgkH39uEobcxkhOQwbFp8eX0yVMYsQVGK9tx9eY9pCMd6ewAh8Wfv1CwBDLZIhaX29hVtukv0Ecol8uwmAMuQkQeg2b8z8H30RIafJ5CqdzPS0gyop2OBDjXSGYYU0tK+IHAJnWOdTpIp2hsPev3IXa41IsPn2tY+LEOhL5yMyo9OV7EvokRME8odXF8QqbnefFqHvenr9NcHOTsDEZ3TiCTr+DjOwfj166gmBdw6kBmSzdhCIBzBqGFmNy9FzuqNnzS9e37VzRbm1hacVHIGaBlQWuVwdoaJRpjSoya++jBQ+QXnoH/nicZLnB8Co2xM3gz14S3DUjnqP+G2v5hAAkkWx0cugDPD2gnaCZCx+0bt3D54iWVHBeT55AEEHAQhFirr8Hv+PIThpGGs7FBt96GycyeDU1h9vUCDu6vwjKTUckNbbs+QiaQt2nJB2wIgGLRdDy11iExkcYFBycpVibVX/MY4x/WMP7pn2STEwAAAABJRU5ErkJggg=="
+        layout="fill">
+      </amp-img>
+    </amp-img>
+    <amp-img 
+      src="../assets/img/aptoide-homesocial.svg"
+      width="900"
+      height="920"
+      layout="responsive">
+      <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAFo9M/3AAAABGdBTUEAALGPC/xhBQAAAqpJREFUOBGFk0tPFEEUhU9V13TPqweawcEYoihqINEYTQQTE93rH3Djwo17V/4B10Z3/gh3bF1oTNS4gKBCMgQMQZBHMwxN9zx6urvKW9VoiC68i55HfXXq3HOrsba+q7IsU3xwxBAEAVgvjpWdRBD9ozZCyQDN+AvvDJcmsWJtP1ILK7tQUsIqFIDDw8CsaqVP85uKx/u7CNoH4CoFiOKW6yKVCkHUg2IMYr7Zg8UyMM5xdaoOpk+pBGvAjybYzfsgCKVSCRZn+LLcIikJVHkN1ak7KJdLqI94qLx9AXtnGSQD1vzqq/NTQ8jSDH/X8iq1FkWR6rYVOElysq2I4yJHCyX6fPTktQrC8E8vup9s0FPb277abwWKazaae4W95iJ830cYhgi7MVpLH4yMERMT1yDtIjzPgy0sE8BW5XQO8LiAekeg0xiHUgrqO+1ceoO6dy8HUnuA8MokZJJQJynC4Wng9jT6nQRVQkSj7qI43DD0yUfVLaDb7YBtbrTV2s8A5N6MSEM6ZpkxzN5o5DkkPSBLQPMjfzQkChCWreg3y2fx7OV7PH96CywmSWGDl6rgTtmYZjQcbd6UzEB5wt/awk7HxeREDceZAuHGCvof5yCGPKQXZ+GMX0apXIHjOCgWizQJEylZy7Cz+g1qbMZo5gKKYcQdh3P9AQbnzkDWPboNHEIICIsGvrkIrH+mPlLIS3dxtnYBG4zyphJpn3qi26tOeZCjNWPdoo26tPUso+s0OglUxugfCVV0KawO0DIIRDagzZZCAoIJQBJTUKlJVdvWGUj9AliVPOkerQmHbvfArInhmo3HD2fA7SFUipLg48DyA/55WhbD3oE0rA7UXNf4iDiu0Esjsq2tayFyc6JyN5zCBGq1qjldLxuBE9x/v+oD9Gv3u34B8JlcYgfGhEYAAAAASUVORK5CYII="
+        layout="fill">
+      </amp-img>
+    </amp-img>
+    <section class="text-box">
+      <p>One idea behind Aptoide was the integration of a social component in the app discovery process. This had been confined to one feature, the app timeline, but for the next version of Aptoide we wanted to sprinkle the social aspect over the whole experience.</p>
+    </section>
+    
+     <div class="video-container">
+       <amp-video
+        autoplay
+        loop
+        width="900"
+        height="920"
+        layout="responsive">
+        <source type="video/mp4"
+          src="https://felixlangeportfolio.netlify.com/assets/video/aptoide-appview.mp4">
+        <source type="video/webm"
+          src="https://felixlangeportfolio.netlify.com/assets/video/aptodie-appview.webm">
+        <div fallback>
+          <p>This browser does not support the video element.</p>
+        </div>
+      </amp-video>
+    </div>
+    <section class="text-box">
+      <p>The appview was redesigned based on what our users thought was most important (using suverys).</p>
+    </section>
+    
+    <amp-img 
+      src="../assets/img/aptoide-start.svg"
+      width="900"
+      height="920"
+      layout="responsive">
+      <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAFo9M/3AAAABGdBTUEAALGPC/xhBQAAAjVJREFUOBGFU82K01AU/pKbpG2SdjptYbooKIyoDOJGxYUwW1/Cp/EBfAN3gjthcKWCKxeCIiijA5ZRGDo41HbaJLdt0iQ3npufW7QLTxbncO453/n5TjTOeTa5DAFpRHGcadIAif7y9YnUxdPzFx+yJE0y+arnXk3DfD4rTOn9PQ3RaDC4tglDuts7JpjIsZCn2PU6UrA8JXf4/gzhernBkNbHL+e4c2sPq9UKhmnDsoqMHFMG/Lrw8e77MxidezjtH+LRgfRSw4UCMvqORm9wf8rRtI8rN9RoF+MFWs0GskxA0DhNpxypmj1YxIiilAIy9DoN0Ky5qBIiiWDXYuy2GLwgUiVUAHQD7d0u7HoNcz/ZDhidDfH0yWN8Ph4iKbcko1STAQ+pdguCdjb84ePqwMlR1B7en7zFlcTDzVEP7YeHqoRCGE8u0XSpe3parTVqtv43glUjeEE1NR2WSUYpCqFyhLSLT18nOD3zAVFMozEDN/Y7uH29jVrJURW/BXD06hse3B3ANAQcxwVjDHEUIUlSRMKg1mpVbq7VkJVX1zUs6CLS1U9MWY/ItmEyHXGri4Do/C8A3QRsy4DF+uA0zk7XpU6aOPcSTGcbgqqCWx3IB56E8JZj7O9dQyvVoXs++q4N98Ct8pTenELlog7WdDcenxAfPjIeQAtjTCL5B5QXVsWS3urAcSx03B4GXSKbKONlsJNqELSff2WLBbpm8OU6P2uRFnzrtESd7tuxLXXmFdAfcNb5Pu0B8YUAAAAASUVORK5CYII="
+        layout="fill">
+      </amp-img>
+    </amp-img>
+    <section class="text-box">
+      <p>Overall most of the work done is not seen here. Most of our time was spent understanding our users needs and emotions. For more on that, please contact me, always happy to talk about empathy and user behavior </p>
+    </section>
+
    
   </body>
 </html>
