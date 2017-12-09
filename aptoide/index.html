@@ -1,0 +1,263 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-gfycat" src="https://cdn.ampproject.org/v0/amp-gfycat-0.1.js"></script>
+    <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://felixlangeportfolio.netlify.com/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://felixlangeportfolio.netlify.com/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://felixlangeportfolio.netlify.com/favicon-32x32.png" sizes="32x32">
+    <title>Felix Lange Portfolio - Aptoide</title>
+    <link rel="canonical" href="https://felixlangeportfolio.netlify.com/hollo-email-messenger/index.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+
+    <style amp-custom>
+      /* Setting up fonts */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
+      }
+
+      @font-face {
+        font-family: 'fantasque_sans_monobold';
+        src: url('../assets/fonts/fantasquesansmono-bold-webfont.woff2') format('woff2'),
+            url('../assets/fonts/fantasquesansmono-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'fantasque_sans_monoregular';
+        src: url('../assets/fonts/fantasquesansmono-regular-webfont.woff2') format('woff2'),
+            url('../assets/fonts/fantasquesansmono-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      /* General rules */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: rgba(0,0,0,0.87);
+      }
+      
+      h1, h2, h3, amp-fit-text {
+        font-family: 'fantasque_sans_monobold';
+      }
+      
+      h2 {
+        font-family: 'fantasque_sans_monoregular';
+        font-size: 1.8rem;
+      }
+       
+      p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+      }
+      
+      .meta-data {
+        display: inline-block;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 400;
+        font-size: 1.15rem;
+        margin: 16px 0;
+      }
+      
+      .text-box {
+        padding: 0 40px;
+        margin-bottom: 80px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      amp-img {
+        background-color: #f4f4f4;
+        margin-bottom: 40px;
+      }
+      amp-img>[placeholder] {
+        margin-bottom: 0px;
+      }
+      amp-img>[placeholder].amp-hidden {
+        opacity: 0;
+        transition: visibility 0s linear 0.25s,opacity 0.25s linear;
+      }
+      
+      amp-image-lightbox {
+        background-color: #f4f4f4;
+      }
+      
+      amp-img.logo {
+        background-color: transparent;
+        width: 100%;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .video-container {
+        background-color: #f4f4f4;
+        max-height: 80vh;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .bttn-back {
+        position: relative;
+        width: 128px;
+        height: 128px;
+        left: 50%;
+        margin-left: -64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 40px;
+      }
+      
+      .bttn-back__piece-text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation-name: spinner;
+        animation-duration: 3.4s;
+        animation-iteration-count: infinite;
+        /*animation-timing-function: linear;*/
+      }
+      
+      .bttn-back amp-img {
+        background-color: transparent;
+        margin: 0;
+      }
+      
+      .bttn-back__piece-round {
+        border-radius: 128px;
+        width: 64px;
+        height: 64px;
+        background-color: #780BFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      @media screen and (max-width: 500px) {
+        amp-video {
+          width: 200%;
+          margin-left: -50%;
+        }
+      }
+      
+      @media screen and (min-width: 640px) {
+        amp-img {
+          max-height: 80vh;
+          max-width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .other-projects amp-img {
+         max-width: none;
+       }
+        
+        amp-video {
+          max-height: 80vh;
+          max-width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+      }
+      @media screen and (min-width: 1442px) {
+        amp-img {
+          max-height: 40vh;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 60%;
+        }
+        amp-video {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 60%;
+        }
+      }
+      
+      
+      @keyframes spinner {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+      }
+    </style>
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  </head>
+  
+  <body>
+    <section class="text-box">
+      <span class="meta-data">2017 / Lead UX Designer</span>
+      <amp-fit-text width="300" height="200" layout="responsive" min-font-size="20">
+        Aptoide - lorem
+      </amp-fit-text>
+      <h2>The problem</h2>
+      <p>Our app had been a testing ground for features, leading to bloat and a messy user experience.</p>
+    </section>
+    <section class="text-box">
+      <h2>Solution</h2>
+      <p>Prune away what is not used, enhance the experience for the flows that are loved.</p>
+    </section>
+    <amp-img
+      src="../assets/img/playguiden-start.svg"
+      width="1500"
+      height="920"
+      layout="responsive">
+      <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAHKue4KAAAABGdBTUEAALGPC/xhBQAAAZ9JREFUKBWdUctKw0AUPRMT0TYWlKoFlSLio6CCG0URN4KgoAjFhX6KLlREv0L6AS7VZbsRwUV9rVy50FJsfDS2ediYxIwzU20RXTkwd4aTc849c0Msy6JgS+Ll5OQU5BuRLy6vIElSFenqm0W0Mwqz/FyncA1fkmmaWFhew8R0UgAkm83SN8dhtgQDA/1ViWEYmN/dQyQag9wcxsuDBk+7x3lqH+BtC4UC5afrudTzPGqYJs2k0wKr5RIN/igyx8ZWVxAeHEe8Q8GjpaCs5ZDZ2kAkEoEg5NPXaM+HkRhqRuHsBr6kAltfdrz30eEhNWyL+r5PHcehuq7XcpFcLkfv7u4FXS+V0NbaCkIIGtiYRkdH6pNh6bG5vY0g+GBk8uVfPygVUxfiHcZTFEV8FBn5rVKpIJU6gCvFoPYMI9GrYiYuI3PrQSt5cNgs7dci4jEF64z7y4DHWlqcw9TUJBSZovj0yGwbkOwOoREuXN+Hw8Jpz0WRQrRnpZaAA+GQAr3IhYCqtrCtCnIQBJDY730vl9H0Q8Eea9v2sVD8s3wCNHHOWzbndyUAAAAASUVORK5CYII="
+        layout="fill">
+      </amp-img>
+    </amp-img>
+    <section class="text-box">
+      <p>This was an experiment on the side of our regular product (a what's on tv app) which demanded that we would iterate quickly. The idea was to build a native app at some point but to start, our 2 man team would use the latest technology ( as of 2013) to build a "web app". </p>
+    </section>
+    <amp-img 
+      src="../assets/img/playguiden-whatsnew.svg"
+      width="1500"
+      height="920"
+      layout="responsive">
+      <amp-img placeholder
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAHKue4KAAAABGdBTUEAALGPC/xhBQAAAYBJREFUKBWdUT1LA0EQfXsfQfw4jIWgoCKSVDFWgrFUIlj6B+zEzr9gTGtvL/gT7CIeBNuYUrAIyZFrIrlLLnf5uBw5d/a8U7FzYIfdtzNv3sww13VDcJPIVasvYDGi1F7rkCT+QYht2yFZpVIJkxDKIZMGgwEahoHJZCIApd1uYzgeo9+1kM1mIlbHcfDw8Y6AVwwZ4LseOo0Wbs/OoVAeYwwXm3sYOh2sbWTAi6LmqYLyT1GB/nCC4er+DjuH+1wSw8yfIggCXG7tQdO0qMTp6jaWugGKR8cIplPqLVEtZkCM6xp3oZgLfN8XughnhmGEzWaL7rB6Payk0+JT5mPK53e/hzfl1KVyGbNwJoJ/OWr/C+AycXNdgqpGXYom6G80GqFQOECxeALbsbAwv4j0clSNJHmeJyjq9bqIjQmSHmiWMpPEYk0uuW/ZSMlKclRJBh2Fx1BsbIkCAnRdh2mawCxAau4NT/ozUpIixkoqaEG01VwuF+eDcWmPyesfl0+ERLSSunXkLAAAAABJRU5ErkJggg=="
+        layout="fill">
+      </amp-img>
+    </amp-img>
+    <section class="text-box">
+      <p>The starting point was "what's new". Which would in time turn into a personalized flow based on what the user was saving to their list. So if you were heavy into sci-fi we would eventually highlight sci-fi in your feed. At the time this made a lot of sense because both netflix and HBO mostly had content that had already been aired on TV.</p>
+    </section>
+    
+    <amp-video
+      autoplay
+      loop
+      width="1920"
+      height="1080"
+      layout="responsive">
+      <source type="video/mp4"
+        src="https://felixlangeportfolio.netlify.com/assets/video/playguiden-save-mobile.mp4">
+      <source type="video/webm"
+        src="https://felixlangeportfolio.netlify.com/assets/video/playguiden-save-mobile.webm">
+      <div fallback>
+        <p>This browser does not support the video element.</p>
+      </div>
+    </amp-video>
+
+    <section class="text-box">
+      <p>When the user tried to save a movie to their watchlist, that action initiated a signup flow if the user was not already signed in. The idea was that since you had already found something to save, signing up would be an easy decision.</p>
+    </section>
+   
+  </body>
+</html>
