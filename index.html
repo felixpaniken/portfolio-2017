@@ -175,6 +175,36 @@
       .project-wrapper h2 {
         margin-top: 0;
       }
+      
+      .video-container-frame {
+          position: relative;
+          background-color: #f4f4f4;
+          height: 50vh;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          overflow: hidden;
+        }
+      
+      .video-container-frame .phone-frame {
+          position: absolute;
+          background: url("https://felixlangeportfolio.netlify.com/assets/img/protopie-pixel1-frame.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          height: 45vh;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+        }
+      
+      .video-container-frame amp-video {
+          top: 50%;
+          transform: translateY(-50%);
+          height: 35vh;
+          z-index: 1;
+        }
     
       
       @media screen and (min-width: 640px) {
@@ -188,6 +218,19 @@
           max-width: none;
           max-height: none;
         }
+        
+        .video-container-frame {
+          height: 80vh;
+          max-width: 80%;
+        }
+        
+        .video-container-frame .phone-frame {
+          height: 70vh;
+        }
+      
+        .video-container-frame amp-video {
+          height: 53vh;
+        }
       }
       @media screen and (min-width: 1442px) {
         amp-img, amp-video {
@@ -198,6 +241,10 @@
          amp-img.logo {
           max-width: none;
           max-height: none;
+        }
+        .video-container-frame {
+          max-width: 60%;
+          padding: 2vh 0;
         }
       }
       
@@ -224,6 +271,33 @@
         <a href="https://www.linkedin.com/in/felixlange/" target="_blank">LinkedIn</a>
       </section>
       </section>
+    
+      <div class="project-wrapper">
+        <a href="discovery/index.html">
+          <div class="video-container-frame">
+            <amp-video
+              autoplay
+              loop
+              width="822"
+              height="1462"
+              layout="responsive">
+              <source type="video/mp4"
+                src="https://felixlangeportfolio.netlify.com/assets/video/discovery-swiping.mp4">
+              <amp-img placeholder      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHZSURBVHgBjZM9jxJRFIafmdkBhgvugMDKDhKMcdettjRxrfwHdv4HExttjH/Bf2FnYmFpYaONtppYuAlqArssgd1hGWA+uDNeoo2jYbjd/XrOe95zjuZ5XkJq9YcRfrBE137v4yRGStjriPRTttIHo4sQuxgi6gLXdRFCYJoFNE2jd+bj7BTWA96++8irly9WcYnjRH0EwzCw7as8evxMAfbWA6JwztHdffS8j1yWGfR+UKrdZjyukDPN9HP09IHI58hXv1Ir72LVRxzcs6n4x9RbH5jOyPZANzTsao5Q/8TNZpkoMJh2QhrnC2oVI1uBrhw/9yKaRYE/n3N6MqSqTO1OXC7nerYCzxL0rFs0T+Hz4RXMakxn7DI028rUOBtQjgIO3C6T423a4huNmqXqkeMo9KmIJBsgZYxl5dm5Y3NmqmuzRPdLSNuRqrG0bAAyIYwk/a0e00GJxcUI53pIMNOQm6Qw85cMTnaRl2OCqWrh+YR8vYAZqeiHGyhYhEvevH6Pc22f+w8ecqPVUJ9N5GJCuNxAgdNyePL0OZVtmyRRpknVPao3DDVHBVH6B6Clp/F7b0q7WeR/K1BpFAv6esCq1j/7nnI8Jvlj2moSS6WcUmWh638DfgGsnrluJxz4eQAAAABJRU5ErkJggg=="
+              layout="fill">
+            </amp-img>
+              <div fallback>
+                <p>This browser does not support the video element.</p>
+              </div>
+            </amp-video>
+            <div class="phone-frame"></div>
+          </div>
+          <section class="text-box">
+            <span class="meta-data">2018 / Project Lead</span>
+            <h2>Discovery - The future of app stores</h2>
+          </section>
+        </a>
+      </div>
     
       <div class="project-wrapper">
         <a href="aptoide/index.html">
