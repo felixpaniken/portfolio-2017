@@ -147,6 +147,36 @@
         align-items: center;
         justify-content: center;
       }
+
+      .video-container-frame {
+          position: relative;
+          background-color: #f4f4f4;
+          height: 50vh;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          overflow: hidden;
+        }
+      
+      .video-container-frame .phone-frame {
+          position: absolute;
+          background: url("https://felixlangeportfolio.netlify.com/assets/img/protopie-pixel1-frame.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          height: 45vh;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+        }
+      
+      .video-container-frame amp-video {
+          top: 50%;
+          transform: translateY(-50%);
+          height: 35vh;
+          z-index: 1;
+        }
       
       @media screen and (min-width: 640px) {
         amp-img, .svg-image {
@@ -173,6 +203,19 @@
         margin-top: 45px;
         height: 70vh;
       }
+
+      .video-container-frame {
+          height: 80vh;
+          max-width: 80%;
+        }
+        
+        .video-container-frame .phone-frame {
+          height: 70vh;
+        }
+      
+        .video-container-frame amp-video {
+          height: 53vh;
+        }
         
       }
       @media screen and (min-width: 1442px) {
@@ -188,6 +231,11 @@
       .video-container amp-video {
           margin-top: 45px;
           height: 30vh;
+        }
+
+        .video-container-frame {
+          max-width: 60%;
+          padding: 2vh 0;
         }
       }
       
@@ -232,7 +280,7 @@
     </section>
     
     <amp-img
-      src="../assets/img/aptoide-problem.svg"
+      src="../assets/img/discovery-research-anim.svg"
       width="900"
       height="920"
       layout="responsive">
@@ -260,7 +308,7 @@
     </section>
     
     <amp-img 
-      src="../assets/img/aptoide-search.svg"
+      src="../assets/img/discovery-gametogame-anim.svg"
       width="900"
       height="920"
       layout="responsive">
@@ -273,16 +321,24 @@
       <p>Our explorations went different ways but in the end we wanted to capture two things learnt from our current users in Aptoide. Our users do not install new Apps that often when compared to Games. This makes sense since after playing a game, you might want another one or more of the same, either case you will be on the hunt. Compare this to how often users install and looks for new social media platforms.</p>
     </section>
     
-    <amp-img 
-      src="../assets/img/aptoide-homesocial.svg"
-      width="900"
-      height="920"
-      layout="responsive">
-      <amp-img placeholder
-    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAFo9M/3AAAABGdBTUEAALGPC/xhBQAAAqpJREFUOBGFk0tPFEEUhU9V13TPqweawcEYoihqINEYTQQTE93rH3Djwo17V/4B10Z3/gh3bF1oTNS4gKBCMgQMQZBHMwxN9zx6urvKW9VoiC68i55HfXXq3HOrsba+q7IsU3xwxBAEAVgvjpWdRBD9ozZCyQDN+AvvDJcmsWJtP1ILK7tQUsIqFIDDw8CsaqVP85uKx/u7CNoH4CoFiOKW6yKVCkHUg2IMYr7Zg8UyMM5xdaoOpk+pBGvAjybYzfsgCKVSCRZn+LLcIikJVHkN1ak7KJdLqI94qLx9AXtnGSQD1vzqq/NTQ8jSDH/X8iq1FkWR6rYVOElysq2I4yJHCyX6fPTktQrC8E8vup9s0FPb277abwWKazaae4W95iJ830cYhgi7MVpLH4yMERMT1yDtIjzPgy0sE8BW5XQO8LiAekeg0xiHUgrqO+1ceoO6dy8HUnuA8MokZJJQJynC4Wng9jT6nQRVQkSj7qI43DD0yUfVLaDb7YBtbrTV2s8A5N6MSEM6ZpkxzN5o5DkkPSBLQPMjfzQkChCWreg3y2fx7OV7PH96CywmSWGDl6rgTtmYZjQcbd6UzEB5wt/awk7HxeREDceZAuHGCvof5yCGPKQXZ+GMX0apXIHjOCgWizQJEylZy7Cz+g1qbMZo5gKKYcQdh3P9AQbnzkDWPboNHEIICIsGvrkIrH+mPlLIS3dxtnYBG4zyphJpn3qi26tOeZCjNWPdoo26tPUso+s0OglUxugfCVV0KawO0DIIRDagzZZCAoIJQBJTUKlJVdvWGUj9AliVPOkerQmHbvfArInhmo3HD2fA7SFUipLg48DyA/55WhbD3oE0rA7UXNf4iDiu0Esjsq2tayFyc6JyN5zCBGq1qjldLxuBE9x/v+oD9Gv3u34B8JlcYgfGhEYAAAAASUVORK5CYII="
-        layout="fill">
-      </amp-img>
-    </amp-img>
+    <div class="video-container-frame">
+            <amp-video
+              autoplay
+              loop
+              width="822"
+              height="1462"
+              layout="responsive">
+              <source type="video/mp4"
+                src="https://felixlangeportfolio.netlify.com/assets/video/discovery-swiping-vid-optM.mp4">
+              <amp-img placeholder      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHZSURBVHgBjZM9jxJRFIafmdkBhgvugMDKDhKMcdettjRxrfwHdv4HExttjH/Bf2FnYmFpYaONtppYuAlqArssgd1hGWA+uDNeoo2jYbjd/XrOe95zjuZ5XkJq9YcRfrBE137v4yRGStjriPRTttIHo4sQuxgi6gLXdRFCYJoFNE2jd+bj7BTWA96++8irly9WcYnjRH0EwzCw7as8evxMAfbWA6JwztHdffS8j1yWGfR+UKrdZjyukDPN9HP09IHI58hXv1Ir72LVRxzcs6n4x9RbH5jOyPZANzTsao5Q/8TNZpkoMJh2QhrnC2oVI1uBrhw/9yKaRYE/n3N6MqSqTO1OXC7nerYCzxL0rFs0T+Hz4RXMakxn7DI028rUOBtQjgIO3C6T423a4huNmqXqkeMo9KmIJBsgZYxl5dm5Y3NmqmuzRPdLSNuRqrG0bAAyIYwk/a0e00GJxcUI53pIMNOQm6Qw85cMTnaRl2OCqWrh+YR8vYAZqeiHGyhYhEvevH6Pc22f+w8ecqPVUJ9N5GJCuNxAgdNyePL0OZVtmyRRpknVPao3DDVHBVH6B6Clp/F7b0q7WeR/K1BpFAv6esCq1j/7nnI8Jvlj2moSS6WcUmWh638DfgGsnrluJxz4eQAAAABJRU5ErkJggg=="
+              layout="fill">
+            </amp-img>
+              <div fallback>
+                <p>This browser does not support the video element.</p>
+              </div>
+            </amp-video>
+            <div class="phone-frame"></div>
+          </div>
     <section class="text-box">
       <p>And the result? TikTok meets twitch for mobile games only! Discovery is a platform where any user can easily record themself playing a mobile game and upload it to their channel to share it with others. It's just as easy to watch other peoples gaming moments, as a user you get content immediately and swipt to the right to see the next video.</p>
     </section>
