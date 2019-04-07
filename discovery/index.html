@@ -63,6 +63,16 @@
         font-size: 1.1rem;
         line-height: 1.8rem;
       }
+
+      ul {
+        font-size: 1.1rem;
+        line-height: 1.45rem;
+        padding-left: 20px;
+      }
+      
+      ul li {
+        margin-bottom: 1rem;
+      }
       
       .meta-data {
         display: inline-block;
@@ -197,6 +207,10 @@
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
+      }
+
+      .video-container.black-bg {
+        background-color: #000000;
       }
       
       .video-container amp-video {
@@ -392,47 +406,49 @@
     <p>Just as a user can watch other users videos, they can also record their own. The way a user can record their gaming video is easy, an overlay from Discovery sits on top of whatever game the user is playing. One tap and the recording starts. The user can then further customize their video with gifs before uploading to Discovery.</p>
   </section>
 
-    <amp-video
-      autoplay
-      loop
-      width="1920"
-      height="1080"
-      layout="responsive">
-      <source type="video/mp4"
-        src="https://felixlangeportfolio.netlify.com/assets/video/aptoide-reactions-opt.mp4">
-      <amp-img placeholder src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHZSURBVHgBjZM9jxJRFIafmdkBhgvugMDKDhKMcdettjRxrfwHdv4HExttjH/Bf2FnYmFpYaONtppYuAlqArssgd1hGWA+uDNeoo2jYbjd/XrOe95zjuZ5XkJq9YcRfrBE137v4yRGStjriPRTttIHo4sQuxgi6gLXdRFCYJoFNE2jd+bj7BTWA96++8irly9WcYnjRH0EwzCw7as8evxMAfbWA6JwztHdffS8j1yWGfR+UKrdZjyukDPN9HP09IHI58hXv1Ir72LVRxzcs6n4x9RbH5jOyPZANzTsao5Q/8TNZpkoMJh2QhrnC2oVI1uBrhw/9yKaRYE/n3N6MqSqTO1OXC7nerYCzxL0rFs0T+Hz4RXMakxn7DI028rUOBtQjgIO3C6T423a4huNmqXqkeMo9KmIJBsgZYxl5dm5Y3NmqmuzRPdLSNuRqrG0bAAyIYwk/a0e00GJxcUI53pIMNOQm6Qw85cMTnaRl2OCqWrh+YR8vYAZqeiHGyhYhEvevH6Pc22f+w8ecqPVUJ9N5GJCuNxAgdNyePL0OZVtmyRRpknVPao3DDVHBVH6B6Clp/F7b0q7WeR/K1BpFAv6esCq1j/7nnI8Jvlj2moSS6WcUmWh638DfgGsnrluJxz4eQAAAABJRU5ErkJggg=="
-      layout="fill">
-    </amp-img>
-      <div fallback>
-        <p>This browser does not support the video element.</p>
-      </div>
-    </amp-video>
-    <section class="text-box">
-    <p>There's tons of stuff not mentioned here, how a user could control their feed of videos, how the reactions and commenting worked, etc etc. If you have any questions, feel free to contact me <a href="mailto:felix.r.lange@gmail.com">✉️</a></p>
-    </section>
+<div class="video-container black-bg">
+  <amp-video
+    autoplay
+    loop
+    width="900"
+    height="920"
+    layout="responsive">
+    <source type="video/mp4"
+      src="https://felixlangeportfolio.netlify.com/assets/video/aptoide-reactions-opt.mp4">
+  <amp-img placeholder src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHZSURBVHgBjZM9jxJRFIafmdkBhgvugMDKDhKMcdettjRxrfwHdv4HExttjH/Bf2FnYmFpYaONtppYuAlqArssgd1hGWA+uDNeoo2jYbjd/XrOe95zjuZ5XkJq9YcRfrBE137v4yRGStjriPRTttIHo4sQuxgi6gLXdRFCYJoFNE2jd+bj7BTWA96++8irly9WcYnjRH0EwzCw7as8evxMAfbWA6JwztHdffS8j1yWGfR+UKrdZjyukDPN9HP09IHI58hXv1Ir72LVRxzcs6n4x9RbH5jOyPZANzTsao5Q/8TNZpkoMJh2QhrnC2oVI1uBrhw/9yKaRYE/n3N6MqSqTO1OXC7nerYCzxL0rFs0T+Hz4RXMakxn7DI028rUOBtQjgIO3C6T423a4huNmqXqkeMo9KmIJBsgZYxl5dm5Y3NmqmuzRPdLSNuRqrG0bAAyIYwk/a0e00GJxcUI53pIMNOQm6Qw85cMTnaRl2OCqWrh+YR8vYAZqeiHGyhYhEvevH6Pc22f+w8ecqPVUJ9N5GJCuNxAgdNyePL0OZVtmyRRpknVPao3DDVHBVH6B6Clp/F7b0q7WeR/K1BpFAv6esCq1j/7nnI8Jvlj2moSS6WcUmWh638DfgGsnrluJxz4eQAAAABJRU5ErkJggg=="
+    layout="fill">
+  </amp-img>
+    <div fallback>
+      <p>This browser does not support the video element.</p>
+    </div>
+  </amp-video>
+</div>
+<section class="text-box">
+<p>There's tons of stuff not mentioned here, how a user could control their feed of videos, how the reactions and commenting worked, etc etc. If you have any questions, feel free to contact me <a href="mailto:felix.r.lange@gmail.com">✉️</a></p>
+</section>
 
-    <section class="text-box other-projects">
-      <a href="../index.html">
-        <div class="bttn-back">
-          <div class="bttn-back__piece-text">
-            <amp-img
-              src="../assets/img/other-projects-text.png"
-              width="128"
-              height="128"
-              >
-            </amp-img>
-          </div>
-          <div class="bttn-back__piece-round">
-            <amp-img
-              src="../assets/img/other-projects-symbol.svg"
-              width="40"
-              height="40"
-              >
-            </amp-img>
-          </div>
-        </div>
-      </a>
-    </section>
+<section class="text-box other-projects">
+  <a href="../index.html">
+    <div class="bttn-back">
+      <div class="bttn-back__piece-text">
+        <amp-img
+          src="../assets/img/other-projects-text.png"
+          width="128"
+          height="128"
+          >
+        </amp-img>
+      </div>
+      <div class="bttn-back__piece-round">
+        <amp-img
+          src="../assets/img/other-projects-symbol.svg"
+          width="40"
+          height="40"
+          >
+        </amp-img>
+      </div>
+    </div>
+  </a>
+</section>
    
   </body>
 </html>
