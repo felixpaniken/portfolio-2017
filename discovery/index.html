@@ -147,6 +147,36 @@
         align-items: center;
         justify-content: center;
       }
+
+      .video-container-frame {
+          position: relative;
+          background-color: #f4f4f4;
+          height: 50vh;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          overflow: hidden;
+        }
+      
+      .video-container-frame .phone-frame {
+          position: absolute;
+          background: url("https://felixlangeportfolio.netlify.com/assets/img/protopie-pixel1-frame.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          height: 45vh;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+        }
+      
+      .video-container-frame amp-video {
+          top: 50%;
+          transform: translateY(-50%);
+          height: 35vh;
+          z-index: 1;
+        }
       
       @media screen and (min-width: 640px) {
         amp-img, .svg-image {
@@ -173,6 +203,19 @@
         margin-top: 45px;
         height: 70vh;
       }
+
+      .video-container-frame {
+          height: 80vh;
+          max-width: 80%;
+        }
+        
+        .video-container-frame .phone-frame {
+          height: 70vh;
+        }
+      
+        .video-container-frame amp-video {
+          height: 53vh;
+        }
         
       }
       @media screen and (min-width: 1442px) {
@@ -188,6 +231,11 @@
       .video-container amp-video {
           margin-top: 45px;
           height: 30vh;
+        }
+
+        .video-container-frame {
+          max-width: 60%;
+          padding: 2vh 0;
         }
       }
       
@@ -224,15 +272,15 @@
         Discovery -  The future of app stores
       </amp-fit-text>
       <h2>The problem</h2>
-      <p>While working at Aptoide, we found that users don't engage and discovery with the store.</p>
+      <p>While working at Aptoide (a third party android app store), we found that users don't engage as much as we wanted with our app store. We need an app store that users visits multiple times per day!</p>
     </section>
     <section class="text-box">
       <h2>Solution</h2>
-      <p>Since app discovery happens outside of the App Store, let's not build "another app store"</p>
+      <p>Since app discovery happens outside of the App Store, let's not build "another app store".</p>
     </section>
     
     <amp-img
-      src="../assets/img/aptoide-problem.svg"
+      src="../assets/img/discovery-research-anim.svg"
       width="900"
       height="920"
       layout="responsive">
@@ -242,25 +290,11 @@
       </amp-img>
     </amp-img>
     <section class="text-box">
-      <p>When looking at the behaviour of our users and doing user interviews we discovered that app discovery usually happened outside of the app store. Sure, sometimes users would go to the app store and browse around, maybe via categories and the like but a lot of users mentioned hearing about an app trough other sources going to the app store only to get that one app.</p>
+      <p>When looking at the behavior of our users and doing user interviews we discovered that app discovery usually happened outside of the app store. A common pattern was hearing about an app from a friend, seeing it on youtube, etc.</p>
     </section>
     
     <amp-img 
-      src="../assets/img/aptoide-bottomnav.svg"
-      width="900"
-      height="920"
-      layout="responsive">
-      <amp-img placeholder
-    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAFo9M/3AAAABGdBTUEAALGPC/xhBQAAAsRJREFUOBGFU0trE1EU/u6dZ5NmktCHitqCVlvE0o2PFkpBBEsrProSXQj+ABeCS8GF/gFXKv4FQaz+ArMTShWtUBqphSRtkzTJTN7zup470QrZeGDmzj33O+ee831n8PPXvmi3XMFBVrMPgJ18XrhNR3CTfKWqA0jMauaDcMp7ot1oCtZoNIRtNxEEPlRVASuWSyI5aIFxjvXv+1BL1SJYpw6z6lPeGPjwYBouM9AaTQKMgdXrdVGl7JxCUqkEmLxlfesdPmae4vG1ZzjesmCuObBvziPbifcAo8MDMAwTgaCbmRatnNGl30pQU5aJrquBia7sBo1agIEUohLjMfLLuuWBU2DQ4wKByyCEwOCo9JI9ePRW7OTyombbxEpbdD1fuF5H7O6WRfnAFqoEPXk5g9npu7iuHcNI/RT4ZgGvbp/Bw4kFRICVq28wNTaBAaZAJI9AX2a4327L2B5geX4RnKkIRQCiAiF1oAfuXwCDXSwhVPTIIQuUFvgENej5/CUvps+miP0wOvA7lNYEKnWBRIzYlW06ThNhGKJFiprpEIqiwrJiRD3r1aB6ceodGBqh1B6gsEiXKGOkxfMXGdxaAVYzr8GhYO7CEi6dm0L9q4NhYxxjQyTD+09QZiaBKxex13WxX3BxejxB+D/W7VSQzW0gm9+AX9lFcruCk24ellGBWzhAmN1BuLkNv9HGWi1HevaajXiUOZbm7uDGwj2qW7oE3G6HelFgGjHahQgXZ6ERU0EY4HJRQa51SCOIXwGNwgzJrcYRch1MJwLUXv4woHPNgOd50Rxoqk5rb3horjlOHE1BjcXh+YG8nJgiwYjBgFaZU1IPi9gj45whaSVh6J3omya8IZotDz+2atANHgVJoCBZSHi4jgIjTQnpD5Am59j3Bc5PpmGa6r9xjU77Xt06tZXoc/ZtD1Xo80fb/wVL0G8NxE+nRH5AswAAAABJRU5ErkJggg=="
-        layout="fill">
-      </amp-img>
-    </amp-img>
-    <section class="text-box">
-      <p>This finding is not neccesarily a problem, but it is a great opportunity! My Manager at the time tasked me and one developer with coming up with "the future of app stores".</p>
-    </section>
-    
-    <amp-img 
-      src="../assets/img/aptoide-search.svg"
+      src="../assets/img/discovery-gametogame-anim.svg"
       width="900"
       height="920"
       layout="responsive">
@@ -270,43 +304,112 @@
       </amp-img>
     </amp-img>
     <section class="text-box">
-      <p>Our explorations went different ways but in the end we wanted to capture two things learnt from our current users in Aptoide. Our users do not install new Apps that often when compared to Games. This makes sense since after playing a game, you might want another one or more of the same, either case you will be on the hunt. Compare this to how often users install and looks for new social media platforms.</p>
+      <p>Our explorations went different ways but in the end we wanted to capture two things learnt from our current users in Aptoide:</p>
+      <ul>
+        <li>Our users do not install new Apps often BUT they do install a lot of games. This makes sense since after playing a game, you might want another one or more of the same, either case you will be on the hunt. </li>
+        <li>Our users love videos and videos were always some of the most engaged with content.</li>
+      </ul>
     </section>
     
-    <amp-img 
-      src="../assets/img/aptoide-homesocial.svg"
-      width="900"
-      height="920"
-      layout="responsive">
-      <amp-img placeholder
-    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAFo9M/3AAAABGdBTUEAALGPC/xhBQAAAqpJREFUOBGFk0tPFEEUhU9V13TPqweawcEYoihqINEYTQQTE93rH3Djwo17V/4B10Z3/gh3bF1oTNS4gKBCMgQMQZBHMwxN9zx6urvKW9VoiC68i55HfXXq3HOrsba+q7IsU3xwxBAEAVgvjpWdRBD9ozZCyQDN+AvvDJcmsWJtP1ILK7tQUsIqFIDDw8CsaqVP85uKx/u7CNoH4CoFiOKW6yKVCkHUg2IMYr7Zg8UyMM5xdaoOpk+pBGvAjybYzfsgCKVSCRZn+LLcIikJVHkN1ak7KJdLqI94qLx9AXtnGSQD1vzqq/NTQ8jSDH/X8iq1FkWR6rYVOElysq2I4yJHCyX6fPTktQrC8E8vup9s0FPb277abwWKazaae4W95iJ830cYhgi7MVpLH4yMERMT1yDtIjzPgy0sE8BW5XQO8LiAekeg0xiHUgrqO+1ceoO6dy8HUnuA8MokZJJQJynC4Wng9jT6nQRVQkSj7qI43DD0yUfVLaDb7YBtbrTV2s8A5N6MSEM6ZpkxzN5o5DkkPSBLQPMjfzQkChCWreg3y2fx7OV7PH96CywmSWGDl6rgTtmYZjQcbd6UzEB5wt/awk7HxeREDceZAuHGCvof5yCGPKQXZ+GMX0apXIHjOCgWizQJEylZy7Cz+g1qbMZo5gKKYcQdh3P9AQbnzkDWPboNHEIICIsGvrkIrH+mPlLIS3dxtnYBG4zyphJpn3qi26tOeZCjNWPdoo26tPUso+s0OglUxugfCVV0KawO0DIIRDagzZZCAoIJQBJTUKlJVdvWGUj9AliVPOkerQmHbvfArInhmo3HD2fA7SFUipLg48DyA/55WhbD3oE0rA7UXNf4iDiu0Esjsq2tayFyc6JyN5zCBGq1qjldLxuBE9x/v+oD9Gv3u34B8JlcYgfGhEYAAAAASUVORK5CYII="
+    <div class="video-container-frame">
+            <amp-video
+              autoplay
+              loop
+              width="822"
+              height="1462"
+              layout="responsive">
+              <source type="video/mp4"
+                src="https://felixlangeportfolio.netlify.com/assets/video/discovery-swiping-vid-optM.mp4">
+              <amp-img placeholder      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHZSURBVHgBjZM9jxJRFIafmdkBhgvugMDKDhKMcdettjRxrfwHdv4HExttjH/Bf2FnYmFpYaONtppYuAlqArssgd1hGWA+uDNeoo2jYbjd/XrOe95zjuZ5XkJq9YcRfrBE137v4yRGStjriPRTttIHo4sQuxgi6gLXdRFCYJoFNE2jd+bj7BTWA96++8irly9WcYnjRH0EwzCw7as8evxMAfbWA6JwztHdffS8j1yWGfR+UKrdZjyukDPN9HP09IHI58hXv1Ir72LVRxzcs6n4x9RbH5jOyPZANzTsao5Q/8TNZpkoMJh2QhrnC2oVI1uBrhw/9yKaRYE/n3N6MqSqTO1OXC7nerYCzxL0rFs0T+Hz4RXMakxn7DI028rUOBtQjgIO3C6T423a4huNmqXqkeMo9KmIJBsgZYxl5dm5Y3NmqmuzRPdLSNuRqrG0bAAyIYwk/a0e00GJxcUI53pIMNOQm6Qw85cMTnaRl2OCqWrh+YR8vYAZqeiHGyhYhEvevH6Pc22f+w8ecqPVUJ9N5GJCuNxAgdNyePL0OZVtmyRRpknVPao3DDVHBVH6B6Clp/F7b0q7WeR/K1BpFAv6esCq1j/7nnI8Jvlj2moSS6WcUmWh638DfgGsnrluJxz4eQAAAABJRU5ErkJggg=="
+              layout="fill">
+            </amp-img>
+              <div fallback>
+                <p>This browser does not support the video element.</p>
+              </div>
+            </amp-video>
+            <div class="phone-frame"></div>
+          </div>
+    <section class="text-box">
+      <p>And the result? TikTok meets twitch for mobile games only! As a user starts Discovery they instantly see other peoples gaming videos. They can easily swipe to get to the next video or search if they want something in particular. And more importantly, they can install the game they are watching from Google Play! (or any third party app store 😉)</p>
+    </section>
+
+    <div class="video-container-frame">
+      <amp-video
+        autoplay
+        loop
+        width="822"
+        height="1462"
+        layout="responsive">
+        <source type="video/mp4"
+          src="https://felixlangeportfolio.netlify.com/assets/video/discovery-gamelib-vid-optM.mp4">
+        <amp-img placeholder      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHZSURBVHgBjZM9jxJRFIafmdkBhgvugMDKDhKMcdettjRxrfwHdv4HExttjH/Bf2FnYmFpYaONtppYuAlqArssgd1hGWA+uDNeoo2jYbjd/XrOe95zjuZ5XkJq9YcRfrBE137v4yRGStjriPRTttIHo4sQuxgi6gLXdRFCYJoFNE2jd+bj7BTWA96++8irly9WcYnjRH0EwzCw7as8evxMAfbWA6JwztHdffS8j1yWGfR+UKrdZjyukDPN9HP09IHI58hXv1Ir72LVRxzcs6n4x9RbH5jOyPZANzTsao5Q/8TNZpkoMJh2QhrnC2oVI1uBrhw/9yKaRYE/n3N6MqSqTO1OXC7nerYCzxL0rFs0T+Hz4RXMakxn7DI028rUOBtQjgIO3C6T423a4huNmqXqkeMo9KmIJBsgZYxl5dm5Y3NmqmuzRPdLSNuRqrG0bAAyIYwk/a0e00GJxcUI53pIMNOQm6Qw85cMTnaRl2OCqWrh+YR8vYAZqeiHGyhYhEvevH6Pc22f+w8ecqPVUJ9N5GJCuNxAgdNyePL0OZVtmyRRpknVPao3DDVHBVH6B6Clp/F7b0q7WeR/K1BpFAv6esCq1j/7nnI8Jvlj2moSS6WcUmWh638DfgGsnrluJxz4eQAAAABJRU5ErkJggg=="
         layout="fill">
       </amp-img>
-    </amp-img>
+        <div fallback>
+          <p>This browser does not support the video element.</p>
+        </div>
+      </amp-video>
+      <div class="phone-frame"></div>
+    </div>
     <section class="text-box">
-      <p>And the result? TikTok meets twitch for mobile games only! Discovery is a platform where any user can easily record themself playing a mobile game and upload it to their channel to share it with others. It's just as easy to watch other peoples gaming moments, as a user you get content immediately and swipt to the right to see the next video.</p>
+    <p>The user can quickly launch their installed games from Discovery, this was necessary in the beginning to enable users to record videos from their games.</p>
     </section>
-    
-    
-    <iframe  width="411px" height="675px" src="https://share.protopie.io/irtKqwE1ea1">
-    </iframe>
+
+    <div class="video-container-frame">
+      <amp-video
+        autoplay
+        loop
+        width="822"
+        height="1462"
+        layout="responsive">
+        <source type="video/mp4"
+          src="https://felixlangeportfolio.netlify.com/assets/video/discovery-thumbnails-vid-optM.mp4">
+        <amp-img placeholder      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHZSURBVHgBjZM9jxJRFIafmdkBhgvugMDKDhKMcdettjRxrfwHdv4HExttjH/Bf2FnYmFpYaONtppYuAlqArssgd1hGWA+uDNeoo2jYbjd/XrOe95zjuZ5XkJq9YcRfrBE137v4yRGStjriPRTttIHo4sQuxgi6gLXdRFCYJoFNE2jd+bj7BTWA96++8irly9WcYnjRH0EwzCw7as8evxMAfbWA6JwztHdffS8j1yWGfR+UKrdZjyukDPN9HP09IHI58hXv1Ir72LVRxzcs6n4x9RbH5jOyPZANzTsao5Q/8TNZpkoMJh2QhrnC2oVI1uBrhw/9yKaRYE/n3N6MqSqTO1OXC7nerYCzxL0rFs0T+Hz4RXMakxn7DI028rUOBtQjgIO3C6T423a4huNmqXqkeMo9KmIJBsgZYxl5dm5Y3NmqmuzRPdLSNuRqrG0bAAyIYwk/a0e00GJxcUI53pIMNOQm6Qw85cMTnaRl2OCqWrh+YR8vYAZqeiHGyhYhEvevH6Pc22f+w8ecqPVUJ9N5GJCuNxAgdNyePL0OZVtmyRRpknVPao3DDVHBVH6B6Clp/F7b0q7WeR/K1BpFAv6esCq1j/7nnI8Jvlj2moSS6WcUmWh638DfgGsnrluJxz4eQAAAABJRU5ErkJggg=="
+        layout="fill">
+      </amp-img>
+        <div fallback>
+          <p>This browser does not support the video element.</p>
+        </div>
+      </amp-video>
+      <div class="phone-frame"></div>
+    </div>
     <section class="text-box">
-      <p>Have a click around!</p>
+    <p>Swiping from the tops allows the user to quickly look through their current feed of videos and jump ahead.</p>
     </section>
-    <amp-img 
+
+
+    <amp-img
       src="../assets/img/discovery-create.svg"
       width="900"
       height="920"
       layout="responsive">
       <amp-img placeholder
-    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHPSURBVHgBjZNdaxNBFIaf2d1sPrtpbJqEoiJIEUNuxZuCiF73n5QqCF70Z/g3vBTESy+kGLwQRVu0WrVQNNImadb96u6MswuCZEuSAwdmDjvPvmfmPcJ1XcV/ofRu4iWcx+lOpJWs7geSy+0C02FMFwYnASQeK3UTU53pnGTr9PCPn1EOYE0X3n7c5/nLFxx8OUKYJQoq0RoMvTbZ2d7iaufKbMB4fMbe5wP6e99JRiOMcg0Zx9h2lcdxPF+BEAa7/XdYpSpW2UFYNoYpkUnEyWiBFmqrTXqbm4ShS+AHlIoaYFlZtjq1+QCpJGYhYblYptJcxg18GksOQy/gdLhAC4H+cP/9V5RMuNs1aNuKZ68LWFpJdG8BgIxCosGxfv6E2w2HwUQSDPXd2BWal6z5ABVHqPFvlBA8eToixtTmKuqnHGt/LKBASYkK/cySp6H2mUjTo1Qp65KaDxAaQArQccdS+PrM4UqLhzuPdH8yB8hZOf3L9Wu3SIfh/s0bdHs9gskfvn34xL+5mKlgfb3Lg61tdl+t0drYoBFFRP03eh4c6o6TA4jpaTz+5dNu2lwUrqeoL1mzFXRWixwejYjC88xUqWphCGrVAmvteg76Fz3fwxLG1+ZkAAAAAElFTkSuQmCC"
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAFo9M/3AAAABGdBTUEAALGPC/xhBQAAAWdJREFUOBGNUttOwzAMPUkv61o2BOL/Pw9pEjBUytZrQo5bp1Tbwywlvp/Yjk3TNB6BLK+u62DUkopmzGqp6xrH43GOvXx5VFUF7/0aQRCSPZ/Ps7Tcdpom6JGIvX2B6y2sladvMTb5QZEw4vJFQjWXVjh1gdQME4om7XeZcOec8NiaaOHqfoCxC9ApMPV4sAbNvsfnXhYPixyGQbRxHIWHl2aiQSo3FuqkRxDatoV0ETpxHHDgRIsBRVFItg2O1BqRkySRgJTzGC4eY5+geF6Gs4yZETdz+P2QRLmqtzsBq/sxKXZ5Op1QluXc6b9cfon+vJpZPzeKFAHyPMfhcBAAzjLLMhlXP04ogs+G5jm+NE3jhDYAVHRDGBSXASHR+fCSl0p0aRhPihXM6vZm6bt889nxEY3ceBWdpVLm0aoosypdFQUw35+NH65AXgJJrmbAhVWq3w3KV4/8abWrpCt9888a8Cj/AxSdydTk6hr7AAAAAElFTkSuQmCC"
         layout="fill">
       </amp-img>
     </amp-img>
-
   <section class="text-box">
-    <p>The way a user can record their gaming moment is easy, an overlay from Discovery sits on top of whatever game the user is playing. One tap and the recording starts. The user could then further customize their video with gifs before uploading to Discovery.</p>
+    <p>Just as a user can watch other users videos, they can also record their own. The way a user can record their gaming video is easy, an overlay from Discovery sits on top of whatever game the user is playing. One tap and the recording starts. The user can then further customize their video with gifs before uploading to Discovery.</p>
   </section>
+
+    <amp-video
+      autoplay
+      loop
+      width="1920"
+      height="1080"
+      layout="responsive">
+      <source type="video/mp4"
+        src="https://felixlangeportfolio.netlify.com/assets/video/aptoide-reactions-opt.mp4">
+      <amp-img placeholder src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHZSURBVHgBjZM9jxJRFIafmdkBhgvugMDKDhKMcdettjRxrfwHdv4HExttjH/Bf2FnYmFpYaONtppYuAlqArssgd1hGWA+uDNeoo2jYbjd/XrOe95zjuZ5XkJq9YcRfrBE137v4yRGStjriPRTttIHo4sQuxgi6gLXdRFCYJoFNE2jd+bj7BTWA96++8irly9WcYnjRH0EwzCw7as8evxMAfbWA6JwztHdffS8j1yWGfR+UKrdZjyukDPN9HP09IHI58hXv1Ir72LVRxzcs6n4x9RbH5jOyPZANzTsao5Q/8TNZpkoMJh2QhrnC2oVI1uBrhw/9yKaRYE/n3N6MqSqTO1OXC7nerYCzxL0rFs0T+Hz4RXMakxn7DI028rUOBtQjgIO3C6T423a4huNmqXqkeMo9KmIJBsgZYxl5dm5Y3NmqmuzRPdLSNuRqrG0bAAyIYwk/a0e00GJxcUI53pIMNOQm6Qw85cMTnaRl2OCqWrh+YR8vYAZqeiHGyhYhEvevH6Pc22f+w8ecqPVUJ9N5GJCuNxAgdNyePL0OZVtmyRRpknVPao3DDVHBVH6B6Clp/F7b0q7WeR/K1BpFAv6esCq1j/7nnI8Jvlj2moSS6WcUmWh638DfgGsnrluJxz4eQAAAABJRU5ErkJggg=="
+      layout="fill">
+    </amp-img>
+      <div fallback>
+        <p>This browser does not support the video element.</p>
+      </div>
+    </amp-video>
+    <section class="text-box">
+    <p>There's tons of stuff not mentioned here, how a user could control their feed of videos, how the reactions and commenting worked, etc etc. If you have any questions, feel free to contact me <a href="mailto:felix.r.lange@gmail.com">✉️</a></p>
+    </section>
 
     <section class="text-box other-projects">
       <a href="../index.html">
